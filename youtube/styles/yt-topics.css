@@ -1,0 +1,99 @@
+.topics {
+  height: 5.6rem;
+  padding: 0 3rem 0 3rem;
+  position: fixed;
+    top: 5.6rem;
+    right: 0;
+    left: 0;
+    z-index: 5;
+  display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.topics-button {
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: .95rem 1.3rem;
+  border: none;
+  border-radius: .8rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.topics-button_music {
+  background-color: white;
+  color: black;
+}
+
+.topics-button:hover {
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.topics-button_music:hover {
+  background-color: white;
+}
+
+.topics-next {
+  background-color: #0f0f0f;
+  height: 5rem;
+  width: 6rem;
+  padding-right: .7rem;
+  border: none;
+  box-shadow: -2rem 0 1rem #0f0f0f;
+  position: absolute;
+    right: 0;
+  display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.topics-next_arrow {
+  font-size: 1.8rem;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: .05s;
+}
+
+.topics-next_arrow:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.topics-tooltip {
+  font-size: 1.2rem;
+  background-color: rgba(100, 100, 100, 0.8);
+  color: white;
+  padding: 1rem .6rem;
+  border: none;
+  border-radius: .3rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  position: absolute;
+    bottom: -4rem;
+    right: .8rem;
+}
+
+.topics-next_arrow:hover .topics-tooltip {
+  opacity: 1;
+}
+
+@media (min-width: 790px) {
+  .topics {
+    left: 6.4rem;
+  }
+}
+
+@media (min-width: 1310px) {
+  .topics {
+    left: 23.5rem;
+  }
+}

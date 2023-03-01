@@ -1,0 +1,140 @@
+.main {
+  width: 100%;
+  padding: 6rem 0 0 0;
+  position: relative;
+  z-index: 8;
+  display: grid;
+    grid-template-columns: 32rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-video {
+  padding-bottom: 2.5rem;
+  display: flex;
+    flex-direction: column;
+}
+
+a {
+  color: inherit;
+}
+
+.main-video_fig, .main-video_img  {
+  width: 100%;
+}
+
+.main-video_fig {
+  position: relative;
+  display: flex;
+    justify-content: center;
+}
+
+.main-video_img {
+  border-radius: 1rem;
+}
+
+.main-video_time {
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0rem .4rem .2rem;
+  border: none;
+  border-radius: .5rem;
+  position: absolute;
+    right: .5rem;
+    bottom: .7rem;
+}
+
+.main-video_visualization {
+  background-color: red;
+  width: 99%;
+  height: .5rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  position: absolute;
+    bottom: .3rem;
+  display: flex;
+    justify-content: end;
+}
+
+.main-video_details {
+  padding: 1rem 0 0 0;
+  display: flex;
+}
+
+.main-video_details-fig {
+  width: 4.8rem;
+}
+
+.main-video_details-img {
+  width: 3.6rem;
+  border-radius: 100%;
+  margin-right: 1.2rem;
+}
+
+.main-video_details-info {
+  padding-right: 1rem;
+  display: flex;
+    flex-direction: column;
+}
+
+.main-video_details-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  line-height: 2rem;
+}
+
+.main-video_details-channel, .main-video_details-stats {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(160, 160, 160);
+}
+
+.main-video_details-channel {
+  padding-top: .7rem;
+  display: flex;
+    align-items: center;
+}
+
+.main-video_details-channel_badge {
+  width: 1.3rem;
+  margin: .1rem 0 0 .5rem;
+}
+
+.main-video_details-stats {
+  padding-top: .3rem;
+}
+
+.main-video_details-live {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgb(180, 1, 1);
+  color: white;
+  width: 5.7rem;
+  padding: .1rem .4rem;
+  border-radius: .3rem;
+  margin-top: .8rem;
+  display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.main-video_details-live_img {
+  width: 1.5rem;
+  margin-top: .1rem;
+}
+
+.main-video_visualization-saint, .main-video_visualization-100v100 {
+  background-color: gray;
+  height: 100%;
+  border-bottom-right-radius: 2rem;
+}
+
+.main-video_visualization-saint {
+  width: 90%;
+}
+
+.main-video_visualization-100v100 {
+  width: 34%;
+}

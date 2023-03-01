@@ -1,11 +1,12 @@
 .topics {
+  background-color: #0f0f0f;
   height: 5.6rem;
   padding: 0 3rem 0 3rem;
   position: fixed;
     top: 5.6rem;
     right: 0;
     left: 0;
-    z-index: 5;
+    z-index: 9;
   display: flex;
     align-items: center;
     gap: 1.3rem;

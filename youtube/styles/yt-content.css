@@ -6,17 +6,13 @@
   display: grid;
     grid-template-columns: 32rem;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 .main-video {
-  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
   display: flex;
     flex-direction: column;
-}
-
-a {
-  color: inherit;
 }
 
 .main-video_fig, .main-video_img  {
@@ -25,8 +21,6 @@ a {
 
 .main-video_fig {
   position: relative;
-  display: flex;
-    justify-content: center;
 }
 
 .main-video_img {
@@ -41,18 +35,39 @@ a {
   border: none;
   border-radius: .5rem;
   position: absolute;
-    right: .5rem;
+    right: .3rem;
     bottom: .7rem;
+}
+
+.main-video_play {
+  font-size: 1.3rem;
+  background-color: black;
+  color: white;
+  padding: .3rem .8rem;
+  border-radius: .2rem;
+  transition: 0.05s;
+  position: absolute;
+    right: .3rem;
+    bottom: .7rem;
+  display: none;
+}
+
+.main-video_fig:hover .main-video_time {
+  display: none;
+}
+
+.main-video_fig:hover .main-video_play {
+  display: inline;
 }
 
 .main-video_visualization {
   background-color: red;
   width: 99%;
-  height: .5rem;
+  height: .4rem;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
   position: absolute;
-    bottom: .3rem;
+    bottom: .2rem;
   display: flex;
     justify-content: end;
 }
@@ -73,8 +88,9 @@ a {
 }
 
 .main-video_details-info {
-  padding-right: 1rem;
+  padding-right: .3rem;
   display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -82,7 +98,28 @@ a {
   font-size: 1.4rem;
   font-weight: 600;
   color: white;
+  max-height: 4rem;
+  overflow-y: hidden;
   line-height: 2rem;
+  position: relative;
+    z-index: 5;
+  display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.main-video_details-options {
+  width: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0;
+  display: flex;
+    justify-content: end;
+}
+
+.main-video:hover .main-video_details-options {
+  opacity: 1;
 }
 
 .main-video_details-channel, .main-video_details-stats {
@@ -93,6 +130,8 @@ a {
 
 .main-video_details-channel {
   padding-top: .7rem;
+  position: relative;
+    z-index: 10;
   display: flex;
     align-items: center;
 }
@@ -102,8 +141,29 @@ a {
   margin: .1rem 0 0 .5rem;
 }
 
+.main-video_details-channel__tooltip {
+  background-color: rgba(100, 100, 100, .9);
+  color: white;
+  padding: .8rem 1rem;
+  border-radius: .5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  position: absolute;
+    top: -5rem;
+    left: -.8rem;
+}
+
+.main-video_details-channel__name:hover {
+  color: rgb(215, 215, 215);
+}
+
+.main-video_details-channel__name:hover .main-video_details-channel__tooltip {
+  opacity: 1;
+}
+
 .main-video_details-stats {
-  padding-top: .3rem;
+  padding-top: .2rem;
 }
 
 .main-video_details-live {
@@ -114,7 +174,8 @@ a {
   width: 5.7rem;
   padding: .1rem .4rem;
   border-radius: .3rem;
-  margin-top: .8rem;
+  margin-top: .6rem;
+  cursor: pointer;
   display: flex;
     align-items: center;
     gap: .7rem;
@@ -125,16 +186,65 @@ a {
   margin-top: .1rem;
 }
 
-.main-video_visualization-saint, .main-video_visualization-100v100 {
+.main-video_visualization-halo, .main-video_visualization-100v100 {
   background-color: gray;
   height: 100%;
   border-bottom-right-radius: 2rem;
 }
 
-.main-video_visualization-saint {
-  width: 90%;
+.main-video_visualization-halo {
+  width: 37%;
 }
 
 .main-video_visualization-100v100 {
   width: 34%;
+}
+
+@media (min-width: 511px) {
+  .main {
+    padding: 2.5rem 7vw 0;
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 790px) {
+  body {
+    padding-left: 6.4rem;
+  }
+  .main {
+    padding: 2.5rem 7.5rem 0;
+  }
+}
+
+@media (min-width: 886px) {
+  .main {
+    padding: 2.5rem 3.5rem;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1144px) {
+  .main {
+    padding: 2rem 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1310px) {
+  body {
+    padding-left: 23.5rem;
+  }
+}
+
+@media (min-width: 1630px) {
+  .main {
+    padding: 2.5rem 7rem;
+      gap: 1.6rem;
+  }
+  .main-video_details-title {
+    font-size: 1.6rem;
+  }
+  .main-video_details-channel, .main-video_details-stats {
+    font-size: 1.4rem;
+  }
 }

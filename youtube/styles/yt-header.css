@@ -208,6 +208,9 @@
 }
 
 @media (max-width: 650px) {
+  .header-middle {
+    padding-left: 5rem;
+  }
   .header-middle_search-bar {
     opacity: 0;
   }

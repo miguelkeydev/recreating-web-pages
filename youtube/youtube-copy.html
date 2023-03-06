@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Adding 'Roboto' font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Adding styles-->
   <link rel="stylesheet" href="./styles/yt-general.css">
   <link rel="stylesheet" href="./styles/yt-header.css">
   <link rel="stylesheet" href="./styles/yt-sidebar.css">
@@ -16,10 +18,13 @@
 </head>
 <body>
   <header class="header">
+    <!--Left side of the header-->
     <div class="header-left">
+      <!--Hamgburguer menu-->
       <figure class="header-left_menu">
         <img class="header-left_menu-img" src="./images/icons/hamburger-menu.svg" alt="Hamburguer Menu">
       </figure>
+      <!--YouTube Logo-->
       <a class="header-left_youtube-link" href="https://www.youtube.com">
         <figure class="header-left_youtube-logo">
             <img class="header-left_youtube-logo-img" src="./images/icons/youtube-logo.svg" alt="Youtube Colombia Logo">
@@ -29,7 +34,9 @@
         </figure>
       </a>
     </div>
+    <!--Central side of the header-->
     <div class="header-middle">
+      <!--Search bar-->
       <input class="header-middle_search-bar" type="text" placeholder="Search">
       <button class="header-middle_search-button">
         <img class="header-middle_search-button__img" src="./images/icons/search-icon.svg" alt="Magnifying Glass Icon">
@@ -37,6 +44,7 @@
           Search
         </span>
       </button>
+      <!--Voice Search-->
       <button class="header-middle_voice-search-button">
         <img class="header-middle_voice-search-button__img" src="./images/icons/voice-search-icon.svg" alt="Voice Search Icon">
         <span class="tooltip">
@@ -44,13 +52,16 @@
         </span>
       </button>
     </div>
+    <!--Right side of the header-->
     <div class="header-right">
+      <!--Upload Button-->
       <figure class="header-right_upload">
         <img class="header-right_upload-img" src="./images/icons/upload.svg" alt="Upload Icon">
         <span class="tooltip">
           Upload
         </span>
       </figure>
+      <!--Notifications Button-->
       <figure class="header-right_notifications">
         <img class="header-right_notifications-img" src="./images/icons/notifications.svg" alt="Notifications Icon">
         <span class="header-right_notifications-number">
@@ -60,25 +71,31 @@
           Notifications
         </span>
       </figure>
+      <!--Profile Picture-->
       <figure class="header-right_profile">
         <img class="header-right_profile-img" src="./images/channel-pictures/channel-profile-owner.jpg" alt="Profile Image">
       </figure>
     </div>
   </header>
+  <!--Sidebar-->
   <aside class="sidebar">
+    <!--Sidebar Main section-->
     <div class="sidebar-main">
+      <!--Sidebar Home-->
       <div class="sidebar-section sidebar-section_home">
         <img class="sidebar-section_img" src="./images/icons/home.svg" alt="Home Icon">
         <span class="sidebar-section_text">
           Home
         </span>
       </div>
+      <!--Sidebar Shorts-->
       <div class="sidebar-section">
           <img class="sidebar-section_img" src="./images/icons/shorts.svg" alt="Shorts Icon">
           <span class="sidebar-section_text">
             Shorts
           </span>
       </div>
+      <!--Sidebar Subscriptions-->
       <div class="sidebar-section">
           <img class="sidebar-section_img" src="./images/icons/subscriptions.svg" alt="Subscriptions Icon">
           <span class="sidebar-section_text">
@@ -86,43 +103,51 @@
           </span>
       </div>
     </div>
+    <!--Sidebar Secondary section-->
     <div class="sidebar-secondary">
+      <!--Sidebar Library-->
       <div class="sidebar-section sidebar-section_library">
         <img class="sidebar-section_img" src="./images/icons/library.svg" alt="Library Icon">
         <span class="sidebar-section_text">
           Library
         </span>
       </div>
+      <!--Sidebar History-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-history" src="./images/icons/history.svg" alt="History Icon">
         <span class="sidebar-section_text">
           History
         </span>
       </div>
+      <!--Sidebar Your Videos-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/your-videos.svg" alt="Your videos Icon">
         <span class="sidebar-section_text">
           Your videos
         </span>
       </div>
+      <!--Sidebar Watch Later-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-watchlater" src="./images/icons/watch-later.svg" alt="Watch Later Icon">
         <span class="sidebar-section_text">
           Watch Later
         </span>
       </div>
+      <!--Sidebar Liked Videos-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/liked-videos.svg" alt="Liked videos Icon">
         <span class="sidebar-section_text">
           Liked videos
         </span>
       </div>
+      <!--Sidebar Playlist-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-playlist" src="./images/icons/playlist.svg" alt="Playlist Icon">
         <span class="sidebar-section_text">
           Playlist
         </span>
       </div>
+      <!--Sidebar See more-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-seemore" src="./images/icons/see-more.svg" alt="See more Icon">
         <span class="sidebar-section_text">
@@ -130,10 +155,12 @@
         </span>
       </div>
     </div>
+    <!--Sidebar Subscriptions Section-->
     <div class="sidebar-subscriptions">
       <span class="sidebar-subscriptions_text">
         Subscriptions
       </span>
+      <!--Sidebar Channel Info-->
       <div class="sidebar-channel">
         <figure class="sidebar-channel_fig">
           <img class="sidebar-channel_img" src="./images/channel-pictures/channel-picture-lofi.jpg" alt="Lofi Girl Channel Picture">
@@ -143,6 +170,7 @@
         </span>
         <img class="sidebar-channel_status" src="./images/icons/live.svg" alt="Live Icon">
       </div>
+      <!--Sidebar Channel Info-->
       <div class="sidebar-channel">
         <figure class="sidebar-channel_fig">
           <img class="sidebar-channel_img" src="./images/channel-pictures/channel-picture-lethal.jpg" alt="Lethal Crysis Channel Picture">
@@ -151,6 +179,7 @@
           Lethal Crysis
         </span>
       </div>
+      <!--Sidebar Channel Info-->
       <div class="sidebar-channel">
         <figure class="sidebar-channel_fig">
           <img class="sidebar-channel_img" src="./images/channel-pictures/channel-picture-epp.jpg" alt="En Pocas Palabras Channel Picture">
@@ -161,6 +190,7 @@
         <span class="sidebar-channel_status">
           &#x2022
         </span>
+        <!--Sidebar Channel Info-->
       </div>
       <div class="sidebar-channel">
         <figure class="sidebar-channel_fig">
@@ -170,6 +200,7 @@
           QuantumFracture
         </span>
       </div>
+      <!--Sidebar Browse Channels-->
       <div class="sidebar-channel">
         <figure class="sidebar-channel_fig">
           <img class="sidebar-channel_img" src="./images/icons/browse-channels.svg" alt="Lethal Crysis Channel Picture">
@@ -179,46 +210,54 @@
         </span>
       </div>
     </div>
+    <!--Sidebar Explore Section-->
     <div class="sidebar-explore">
       <span class="sidebar-explore_text">
         Explore
       </span>
+      <!--Sidebar Trending-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-trending" src="./images/icons/trending.svg" alt="Trending Icon">
         <span class="sidebar-section_text">
           Trending
         </span>
       </div>
+      <!--Sidebar Music-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-music" src="./images/icons/music.svg" alt="Music Icon">
         <span class="sidebar-section_text">
           Music
         </span>
       </div>
+      <!--Sidebar Live-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/live-w.svg" alt="Live Icon">
         <span class="sidebar-section_text">
           Live
         </span>
       </div>
+      <!--Sidebar Gaming-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/gaming.svg" alt="Gaming Icon">
         <span class="sidebar-section_text">
           Gaming
         </span>
       </div>
+      <!--Sidebar News-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-news" src="./images/icons/news.svg" alt="News Icon">
         <span class="sidebar-section_text">
           News
         </span>
       </div>
+      <!--Sidebar Sports-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-sports" src="./images/icons/sport.svg" alt="Sports Icon">
         <span class="sidebar-section_text">
           Sports
         </span>
       </div>
+      <!--Sidebar Learning-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-learning" src="./images/icons/learning.svg" alt="Learning Icon">
         <span class="sidebar-section_text">
@@ -226,34 +265,40 @@
         </span>
       </div>
     </div>
+    <!--Sidebar More section-->
     <div class="sidebar-more">
       <span class="sidebar-more_text">
         More from YouTube
       </span>
+      <!--Sidebar YouTube Premium-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/youtube.svg" alt="Youtube Icon">
         <span class="sidebar-section_text">
           YouTube Premium
         </span>
       </div>
+      <!--Sidebar Creator Studio-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/youtube-studio.svg" alt="Youtube Creator Studio Icon">
         <span class="sidebar-section_text">
           Creator Studio
         </span>
       </div>
+      <!--Sidebar YouTube Music-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/youtube-music.svg" alt="Youtube Music Icon">
         <span class="sidebar-section_text">
           Youtube Music
         </span>
       </div>
+      <!--Sidebar YouTube Kids-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/youtube-kids.svg" alt="Youtube Kids Icon">
         <span class="sidebar-section_text">
           YouTube Kids
         </span>
       </div>
+      <!--Sidebar YouTube TV-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/youtube-tv.svg" alt="Youtube TV Icon">
         <span class="sidebar-section_text">
@@ -261,25 +306,30 @@
         </span>
       </div>
     </div>
+    <!--Sidebar Others section-->
     <div class="sidebar-others">
+      <!--Sidebar Settings-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/settings.svg" alt="Settings Icon">
         <span class="sidebar-section_text">
           Settings
         </span>
       </div>
+      <!--Sidebar History-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/report-history.svg" alt="Report history Icon">
         <span class="sidebar-section_text">
           Report history
         </span>
       </div>
+      <!--Sidebar Help-->
       <div class="sidebar-section">
         <img class="sidebar-section_img" src="./images/icons/help.svg" alt="Help Icon">
         <span class="sidebar-section_text">
           Help
         </span>
       </div>
+      <!--Sidebar Send Feedback-->
       <div class="sidebar-section">
         <img class="sidebar-section_img sidebar-section_img-sendfeedback" src="./images/icons/send-feedback.svg" alt="Feedback Icon">
         <span class="sidebar-section_text">
@@ -287,6 +337,7 @@
         </span>
       </div>
     </div>
+    <!--Sidebar Footer-->
     <div class="sidebar-footer">
       <div class="sidebar-footer_up">
         <a href="#">
@@ -359,6 +410,7 @@
       </div>
     </div>
   </aside>
+  <!--Topics Bar-->
   <div class="topics">
     <button class="topics-button">
       All
@@ -366,6 +418,7 @@
     <button class="topics-button">
       Live
     </button>
+    <!--Selected topic-->
     <button class="topics-button topics-button_music">
       Music
     </button>
@@ -426,6 +479,7 @@
     <button class="topics-button">
       Champions League
     </button>
+    <!--Button Next-->
     <div class="topics-next">
       <button class="topics-next_arrow">
         &#62;
@@ -435,47 +489,62 @@
       </button>
     </div>
   </div>
+  <!--Main Content-->
   <main class="main">
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=MRyLC2M1K2w">
           <img class="main-video_img" src="./images/video-pictures/video-picture-saint.jpg" alt="Post Malone in the desert">
+          <!--Video Duration-->
           <span class="main-video_time">
             2:37
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UCeLHszkByNZtPKcaVXOCOQQ">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-post.jpg" alt="Post Malone Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=MRyLC2M1K2w">
               <span>
                 Post Malone - Saint-Tropez (Official Video)
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UCeLHszkByNZtPKcaVXOCOQQ">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Post Malone
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Post Malone
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=MRyLC2M1K2w">
               <span>
@@ -486,46 +555,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk">
           <img class="main-video_img" src="./images/video-pictures/video-picture-lofi.jpg" alt="A girl studying next to a window while is raining">
+        <!--Indicative text-->
         <span class="main-video_play">
           Click to play
         </span>
+        <!--Visualization Bar-->
         <div class="main-video_visualization">
 
         </div>
       </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@LofiGirl">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-lofi.jpg" alt="Lofi Gril Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk">
               <span>
                 lofi hip hop radio - beats to relax/study to
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@LofiGirl">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Lofi Girl
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Lofi Girl
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/verified.svg" alt="Verified Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk">
               <span>
@@ -533,6 +616,7 @@
               </span>
             </a>
           </div>
+          <!--Video Live-->
           <div class="main-video_details-live">
             <img class="main-video_details-live_img" src="./images/icons/live-w.svg" alt="Live Icon">
             <span>
@@ -542,16 +626,21 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=MzJjzEEphfM">
           <img class="main-video_img" src="./images/video-pictures/video-picture-halo.jpg" alt="A Halo soldier under the rain">
+          <!--Video Duration-->
           <span class="main-video_time">
             8:00:12
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
+          <!--Visualization Bar-->
           <div class="main-video_visualization">
             <div class="main-video_visualization-halo">
 
@@ -559,33 +648,42 @@
           </div>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@John-117">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-halo.jpg" alt="Halo Odissey Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=MzJjzEEphfM">
               <span>
                 &#127911; Thunder and Rain with Halo 3: ODST Piano 8 Hours | Sleep and...
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@John-117">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Halo Odyssey
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Halo Odissey
                 </span>
               </span>
             </a>
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=MzJjzEEphfM"">
               <span>
@@ -596,46 +694,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=_dL3AygsCMc">
           <img class="main-video_img" src="./images/video-pictures/video-picture-betrayed.jpg" alt="Lil Xan Looking at the camera with a blue background">
+          <!--Video Duration-->
           <span class="main-video_time">
             3:05
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UCo5i-URBk7YYFvU0BR6wzPw">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-xan.jpg" alt="Lil Xan Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=_dL3AygsCMc">
               <span>
                 Lil Xan - Betrayed
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UCo5i-URBk7YYFvU0BR6wzPw">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Lil Xan
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Lil Xan
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=_dL3AygsCMc">
               <span>
@@ -646,46 +758,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=hxaKfxZ8xU4">
           <img class="main-video_img" src="./images/video-pictures/video-picture-veins.jpg" alt="Lil Peep smoking a blunt">
+          <!--Video Duration-->
           <span class="main-video_time">
             3:31
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@LilPeepofficial">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-peep.jpg" alt="Lil Peep Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=hxaKfxZ8xU4">
               <span>
                 Lil Peep - Veins (prod. Greaf)
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@LilPeepofficial">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Lil Peep
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Lil Peep
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=hxaKfxZ8xU4">
               <span>
@@ -696,46 +822,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=usIdSbd1jPw">
           <img class="main-video_img" src="./images/video-pictures/video-picture-best.jpg" alt="The Best trophy">
+          <!--Video Duration-->
           <span class="main-video_time">
             1:44:56
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@fifa">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-fifa.jpg" alt="FIFA Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=usIdSbd1jPw">
               <span>
                 The Best FIFA Football Awards&#8482; 2022 | Live Stream
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@fifa">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 FIFA
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   FIFA
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/verified.svg" alt="Verified Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=usIdSbd1jPw">
               <span>
@@ -746,46 +886,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=6ONRf7h3Mdk">
           <img class="main-video_img" src="./images/video-pictures/video-picture-sicko.jpg" alt="Travis Scott at night looking anywhere">
+          <!--Video Duration-->
           <span class="main-video_time">
             5:23
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-travis.jpg" alt="Travis Scott Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=6ONRf7h3Mdk">
               <span>
                 Travis Scott - SICKO MODE ft. Drake
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Travis Scott
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Travis Scott
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=6ONRf7h3Mdk">
               <span>
@@ -796,46 +950,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=WvV5TbJc9tQ">
           <img class="main-video_img" src="./images/video-pictures/video-picture-savets.jpg" alt="Lil Peep checking his phone">
+          <!--Video Duration-->
           <span class="main-video_time">
             3:52
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@LilPeepofficial">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-peep.jpg" alt="Lil Peep Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=WvV5TbJc9tQ">
               <span>
                 Lil Peep - Save That Shit (Official Video)
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@LilPeepofficial">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Lil Peep
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Lil Peep
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=WvV5TbJc9tQ">
               <span>
@@ -846,49 +1014,64 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=K_yBUfMGvzc">
           <img class="main-video_img" src="./images/video-pictures/video-picture-fivehours.jpg" alt="A picture of a isolated highroad with a 7 in the middle of the image">
+          <!--Video Duration-->
           <span class="main-video_time">
             5:30
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
+        <!--Visualization Bar-->
         <div class="main-video_visualization">
 
         </div>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@PRMDMusicOfficial">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-prmd.jpg" alt="PRMD Music Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=K_yBUfMGvzc">
               <span>
                 Deorro - Five Hours (Static Video) [LE7ELS]
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@PRMDMusicOfficial">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 PRMD Music
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   PRMD Music
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/verified.svg" alt="Verified Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=K_yBUfMGvzc">
               <span>
@@ -899,46 +1082,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=zDktApy8Sn0">
           <img class="main-video_img" src="./images/video-pictures/video-picture-leavetc.jpg" alt="A dark, melancholic landscape">
+          <!--Video Duration-->
           <span class="main-video_time">
             4:41
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-top.jpg" alt="Twenty One Pilots Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=zDktApy8Sn0">
               <span>
                 twenty one pilots - Leave The City (Official Audio)
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 twenty one pilots
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   twenty one pilots
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=zDktApy8Sn0">
               <span>
@@ -949,46 +1146,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=WzQBAc8i73E">
           <img class="main-video_img" src="./images/video-pictures/video-picture-cold.jpg" alt="The NEFFEX logo with an icy, blue background">
+          <!--Video Duration-->
           <span class="main-video_time">
             3:07
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UCBefBxNTPoNCQBU_Lta6Nvg">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-neffex.jpg" alt="NEFFEX Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=WzQBAc8i73E">
               <span>
                 NEFFEX - Cold &#x2744;&#xFE0F; [Copyright Free] No.60
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UCBefBxNTPoNCQBU_Lta6Nvg">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 NEFFEX
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   NEFFEX
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=WzQBAc8i73E">
               <span>
@@ -999,51 +1210,66 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=0CTp1a-aCUM">
           <img class="main-video_img" src="./images/video-pictures/video-picture-100v100.jpg" alt="Mr Beast surprised while there are 100 kids wearing red and 100 adults wearing blue, separated by a white line on the floor">
+          <!--Video Duration-->
           <span class="main-video_time">
             15:23
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
+        <!--Visualization Bar-->
         <div class="main-video_visualization">
           <div class="main-video_visualization-100v100">
 
           </div>
         </div>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@MrBeast">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-mrbeast.jpg" alt="MrBeast Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=0CTp1a-aCUM">
               <span>
                 100 Kids Vs 100 Adults For #500,000
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@MrBeast">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 MrBeast
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   MrBeast
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/verified.svg" alt="Verified Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=0CTp1a-aCUM">
               <span>
@@ -1054,46 +1280,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=n4tK7LYFxI0">
           <img class="main-video_img" src="./images/video-pictures/video-picture-shine.jpg" alt="A modern city in Black and White with the NCS logo and a yellow circle as a sound sensor">
+          <!--Video Duration-->
           <span class="main-video_time">
             4:20
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/@NoCopyrightSounds">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-ncs.jpg" alt="NoCopyrightSounds Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=n4tK7LYFxI0">
               <span>
                 Spektrem - Shine [NCS Release]
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/@NoCopyrightSounds">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 NoCopyrightSounds
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   NoCopyrightSounds
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/verified.svg" alt="Verified Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=n4tK7LYFxI0">
               <span>
@@ -1104,46 +1344,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=S_roMeig-YQ">
           <img class="main-video_img" src="./images/video-pictures/video-picture-lomalo.jpg" alt="A kid sat in the opposite direction on a horse">
+          <!--Video Duration-->
           <span class="main-video_time">
             4:03
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UCHIalb8oZehqMPum16ImmGQ">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-cuarteto.jpg" alt="Cuarteto de Nos Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=S_roMeig-YQ">
               <span>
                 Lo malo de ser bueno
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UCHIalb8oZehqMPum16ImmGQ">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 Cuarteto de Nos
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   Cuarteto de Nos
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=S_roMeig-YQ">
               <span>
@@ -1154,46 +1408,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=11IWuxAMEn8">
           <img class="main-video_img" src="./images/video-pictures/video-picture-lavida.jpg" alt="A painting of a old, sad train station">
+          <!--Video Duration-->
           <span class="main-video_time">
             8:01
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UC-Gh7ndBnNZvGRjCzlt2Ecw">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-can.jpg" alt="El Canserbero Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=11IWuxAMEn8">
               <span>
                 De La Vida Como Pelicula, Tragedia, Comedia y Ficcion
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UC-Gh7ndBnNZvGRjCzlt2Ecw">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 El Canserbero
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   El Canserbero
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/music.svg" alt="Music Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=11IWuxAMEn8">
               <span>
@@ -1204,46 +1472,60 @@
         </div>
       </div>
     </section>
+    <!--Video container-->
     <section class="main-video">
+      <!--Video Image-->
       <figure class="main-video_fig">
         <a href="https://www.youtube.com/watch?v=S19UcWdOA-I">
           <img class="main-video_img" src="./images/video-pictures/video-picture-fearless.jpg" alt="A background of a desert, the NCS logo and a fluorescent green ball as a sound sensor">
+          <!--Video Duration-->
           <span class="main-video_time">
             3:14
           </span>
+          <!--Indicative text-->
           <span class="main-video_play">
             Click to play
           </span>
         </a>
       </figure>
+      <!--Video Information-->
       <div class="main-video_details">
+        <!--Video Channel Picture-->
         <figure class="main-video_details-fig">
           <a href="https://www.youtube.com/channel/UC-Gh7ndBnNZvGRjCzlt2Ecw">
             <img class="main-video_details-img" src="./images/channel-pictures/channel-picture-ncs.jpg" alt="NoCopyrightSounds Channel Picture">
           </a>
         </figure>
+        <!--Video Further Information-->
         <div class="main-video_details-info">
+          <!--Video Title-->
           <div class="main-video_details-title">
             <a href="https://www.youtube.com/watch?v=S19UcWdOA-I">
               <span>
                 Lost Sky - Fearless pt.II (feat. Chris Linton) [NCS Release]
               </span>
             </a>
+            <!--Video Options-->
             <span class="main-video_details-options">
               &#8942;
             </span>
           </div>
+          <!--Channel-->
           <div class="main-video_details-channel">
             <a href="https://www.youtube.com/channel/UC-Gh7ndBnNZvGRjCzlt2Ecw">
+              <!--Channel Name-->
               <span class="main-video_details-channel__name">
                 NoCopyrightSounds
+                <!--Channel Tooltip-->
                 <span class="main-video_details-channel__tooltip">
                   NoCopyrightSounds
                 </span>
               </span>
             </a>
+            <!--Badge (If there is one)-->
             <img class="main-video_details-channel_badge" src="./images/icons/verified.svg" alt="Verified Badge">
           </div>
+          <!--Video Stats-->
           <div class="main-video_details-stats">
             <a href="https://www.youtube.com/watch?v=11IWuxAMEn8">
               <span>

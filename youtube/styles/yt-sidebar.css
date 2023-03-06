@@ -1,49 +1,58 @@
- .sidebar {
+/*Sidebar*/
+.sidebar {
   font-family: 'Roboto';
-  display: none;
+  display: none; /*Hiding the Sidebar*/
 }
 
+/*When the Window is 792px or wider*/
 @media (min-width: 792px) {
+  /*Sidebar*/
   .sidebar {
     width: 6.4rem;
     padding-top: .4rem;
-    overflow-y: auto;
+    overflow-y: auto; /*Making it scrollable if there is too much content*/
     position: fixed;
-      top: 5.5rem;
+      top: 5.5rem; /*Sticking the Sidebar just below the Header*/
       bottom: 0;
-      left: .5rem;
+      left: .5rem; /*Stickind the Sidebar on the left*/
     display: flex;
       flex-direction: column;
   }
   
+  /*Every Sidebar section except Main section*/
   .sidebar-secondary .sidebar-section, .sidebar-subscriptions, .sidebar-explore, .sidebar-more, .sidebar-others, .sidebar-footer {
-    display: none;
+    display: none; /*Hiding them*/
   }
   
+  /*Secondary section and Library*/
   .sidebar-secondary .sidebar-section_library {
-    display: flex;
+    display: flex; /*Making them appear*/
   }
   
+  /*Sidebar general section*/
   .sidebar-section {
     width: 100%;
     height: 7.4rem;
     padding: 1.6rem 0 1.4rem;
     cursor: pointer;
-    display: flex;
+    display: flex; /*Making them appear*/
       flex-direction: column;
       align-items: center;
   }
   
+  /*When hovers a general section*/
   .sidebar-section:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 1rem;
   }
   
+  /*Image of every general section*/
   .sidebar-section_img {
     width: 2.4rem;
     margin-bottom: .6rem;
   }
   
+  /*Text of every general section*/
   .sidebar-section_text {
     font-size: 1rem;
     font-weight: 500;
@@ -51,26 +60,29 @@
   }
 }
 
+/*When the Window is 1313px or wider*/
 @media (min-width: 1313px) {
-
+  /*Sidebar*/
   .sidebar {
     width: 23.5rem;
     padding-bottom: .5rem;
-    overflow-y: auto;
   }
 
+  /*Sidebar scroll bar*/
   .sidebar::-webkit-scrollbar {
-    background-color: #0f0f0f;
+    background-color: #0f0f0f; /*Transparent background*/
     width: .8rem;
-    opacity: 0;
+    opacity: 0; /*Not showing it*/
   }
 
+  /*Scroll bar when hovers Sidebar*/
   .sidebar:hover::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 1rem;
-    opacity: 1;
+    opacity: 1; /*Showing it*/
   }
 
+  /*Every Sidebar Section*/
   .sidebar-main, .sidebar-secondary, .sidebar-subscriptions, .sidebar-explore, .sidebar-more, .sidebar-others, .sidebar-footer {
     border-bottom: .1rem solid rgba(255, 255, 255, 0.15);
     padding: 1rem .5rem 1.5rem 1rem;
@@ -79,41 +91,49 @@
       flex-direction: column;
   }
 
-  .sidebar-secondary .sidebar-section {
+  /*Secondary Section and General sections*/
+  .sidebar-secondary .sidebar-section { /*Making them appear*/
     display: flex;
   }
 
+   /*General sections*/
   .sidebar-section {
     border-radius: 1rem;
     height: 4rem;
-    padding: 0 0 0 1rem;
+    padding-left: 1rem;
       flex-direction: row;
       align-items: center;
       gap: 2.3rem;
   }
 
+  /*Text in General sections*/
   .sidebar-section_text {
     font-size: 1.4rem;
   }
 
+  /*Image in General sections*/
   .sidebar-section_img {
     margin-bottom: 0;
   }
 
+  /*Home General section*/
   .sidebar-section_home {
     background-color: rgba(255, 255, 255, 0.15);
   }
 
+  /*History, Watch Later, and Playlist images*/
   .sidebar-section_img-history, .sidebar-section_img-watchlater, .sidebar-section_img-playlist {
     width: 2rem;
     margin: 0 .2rem;
   }
 
+  /*See More image*/
   .sidebar-section_img-seemore {
     width: 1.4rem;
     margin: 0 .5rem;
   }
 
+  /*Subscriptions, Explore and More texts*/
   .sidebar-subscriptions_text, .sidebar-explore_text, .sidebar-more_text {
     font-size: 1.7rem;
     color: white;
@@ -121,6 +141,7 @@
     margin-bottom: .8rem;
   }
 
+  /*Channel sections*/
   .sidebar-channel {
     height: 4rem;
     padding: 0 .5rem 0 1rem;
@@ -129,27 +150,32 @@
       align-items: center;
   }
 
+  /*When hovers channel a section*/
   .sidebar-channel:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 1rem;
   }
 
+  /*Channel figure*/
   .sidebar-channel_fig {
     width: 4.7rem;
     display: flex;
   }
 
+  /*Channel image*/
   .sidebar-channel_img {
     width: 2.5rem;
     border-radius: 100%;
   }
 
+  /*Channel name*/
   .sidebar-channel_name {
     font-size: 1.4rem;
     color: white;
     flex: 1;
   }
 
+  /*Channel status*/
   .sidebar-channel_status {
     width: 1.5rem;
     color: rgb(64, 150, 230);
@@ -158,21 +184,25 @@
       justify-content: center;
   }
 
+  /*Trending, Music, and News images*/
   .sidebar-section_img-trending, .sidebar-section_img-music, .sidebar-section_img-news {
     width: 2rem;
     margin: 0 .2rem;
   }
 
+  /*Sports and Learning images*/
   .sidebar-section_img-sports, .sidebar-section_img-learning {
     width: 2.6rem;
     margin: 0 -.1rem;
   }
 
+  /*Send Feedback image*/
   .sidebar-section_img-sendfeedback {
     width: 2.8rem;
     margin: 0 -.2rem;
   }
 
+  /*Footer*/
   .sidebar-footer {
     padding: 1.2rem .5rem 1.5rem 2rem;
     border-bottom: none;
@@ -180,6 +210,7 @@
       gap: 1rem;
   }
 
+  /*Every 'a' element from Footer*/
   .sidebar-footer a {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.7);
@@ -187,6 +218,7 @@
     display: inline-block;
   }
 
+  /*Google section*/
   .sidebar-footer_google {
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.3);

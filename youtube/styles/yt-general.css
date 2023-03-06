@@ -1,24 +1,28 @@
+/*Setting every element padding and margin in value=0 and box model=border-box*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html {
+
+html { /*1rem = 10px*/
   font-size: 62.5%;
 }
 
-body {
+body { /*Setting the background color and space for the Header*/
   background-color: #0f0f0f;
   padding-top: 11.2rem;
 }
 
-body::-webkit-scrollbar {
+/*Scroll Bar*/
+body::-webkit-scrollbar { /*Making the scroll bar background transparent*/
   background-color: #0f0f0f;
   width: .8rem;
 }
 
-body::-webkit-scrollbar-thumb {
+/*Scroll Bar - Bar*/
+body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
 }

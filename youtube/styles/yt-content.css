@@ -1,33 +1,41 @@
+/*Main content*/
 .main {
   font-family: 'Roboto';
   width: 100%;
   padding: 6.5rem .4rem 0 0;
-  position: relative;
-  z-index: 8;
-  display: grid;
-    grid-template-columns: 1fr;
+  position: relative; /*Making it relative to put it behind other elements*/
+  z-index: 8; /*Putting this behind the Topics Bar*/
+  display: grid; /*Adding a Grid to display the videos*/
+    grid-template-columns: 1fr; /*Adding one column to display the videos*/
     justify-items: center;
     gap: 4.3rem;
 }
 
+/*Video Container*/
 .main-video {
-  max-width: 32rem;
+  max-width: 32rem; /*This container won't exceed this width*/
   display: flex;
     flex-direction: column;
 }
 
+/*Video figure and image*/
 .main-video_fig, .main-video_img  {
   width: 100%;
 }
 
+/*Video figure*/
 .main-video_fig {
-  position: relative;
+  position: relative; /*Making it relative to put elements on top of it*/
+  display: flex;
+    justify-content: center;
 }
 
+/*Video image*/
 .main-video_img {
   border-radius: 1rem;
 }
 
+/*Video Duration*/
 .main-video_time {
   font-size: 1.3rem;
   background-color: rgba(0, 0, 0, 0.7);
@@ -35,11 +43,12 @@
   padding: 0rem .4rem .2rem;
   border: none;
   border-radius: .5rem;
-  position: absolute;
+  position: absolute; /*Making it absolute to put it on top of the Video figure*/
     right: .3rem;
     bottom: .7rem;
 }
 
+/*Indicative Text*/
 .main-video_play {
   font-size: 1.3rem;
   background-color: black;
@@ -47,47 +56,54 @@
   padding: .3rem .8rem;
   border-radius: .2rem;
   transition: 0.05s;
-  position: absolute;
+  position: absolute; /*Making it absolute to put it on top of the Video figure*/
     right: .3rem;
     bottom: .7rem;
   display: none;
 }
 
+/*Video Duration when hovers the Video figure*/
 .main-video_fig:hover .main-video_time {
-  display: none;
+  display: none; /*Hiding it*/
 }
 
+/*Indicative Text when hovers the Video figure*/
 .main-video_fig:hover .main-video_play {
-  display: inline;
+  display: inline; /*Appearing it*/
 }
 
+/*Visualization Bar*/
 .main-video_visualization {
-  background-color: red;
+  background-color: red; /*Content seen*/
   width: 99%;
   height: .4rem;
-  border-bottom-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  position: absolute;
-    bottom: .2rem;
+  border-bottom-right-radius: 2rem; /*Adding border radius to bottom right*/
+  border-bottom-left-radius: 2rem; /*Adding border radius to bottom left*/
+  position: absolute;  /*Making it absolute to put it on top of the Video figure*/
+    bottom: .3rem;
   display: flex;
-    justify-content: end;
+    justify-content: end; /*To put the not seen content (gray) at the end*/
 }
 
+/*Video Information*/
 .main-video_details {
-  padding: 1rem 0 0 0;
+  padding-top: 1rem;
   display: flex;
 }
 
+/*Channel figure*/
 .main-video_details-fig {
   width: 4.8rem;
 }
 
+/*Channel image*/
 .main-video_details-img {
   width: 3.6rem;
   border-radius: 100%;
   margin-right: 1.2rem;
 }
 
+/*Channel info*/
 .main-video_details-info {
   padding-right: .3rem;
   display: flex;
@@ -95,20 +111,22 @@
     flex-direction: column;
 }
 
+/*Channel title*/
 .main-video_details-title {
   font-size: 1.4rem;
   font-weight: 600;
   color: white;
-  max-height: 4rem;
-  overflow-y: hidden;
+  max-height: 4rem; /*Prevents the text from have three or more lines*/
+  overflow-y: hidden; /*Hide the remaining content if there is more than two lines*/
   line-height: 2rem;
-  position: relative;
-    z-index: 5;
+  position: relative; /*Making it relative to put elements on top of it*/
+    z-index: 5; /*To put it behind the Tooltip*/
   display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
+/*Video Options*/
 .main-video_details-options {
   width: 2rem;
   font-size: 2rem;
@@ -119,54 +137,63 @@
     justify-content: end;
 }
 
+/*Video Options when hovers the Video container*/
 .main-video:hover .main-video_details-options {
   opacity: 1;
 }
 
+/*Channel Info and Video Stats*/
 .main-video_details-channel, .main-video_details-stats {
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(160, 160, 160);
 }
 
+/*Channel Info*/
 .main-video_details-channel {
   padding-top: .7rem;
-  position: relative;
-    z-index: 10;
+  position: relative; /*Making it relative to put it on top of other elements*/
+    z-index: 10; /*To put it on top of Video Title*/
   display: flex;
     align-items: center;
 }
 
+/*Badge*/
 .main-video_details-channel_badge {
   width: 1.3rem;
   margin: .1rem 0 0 .5rem;
 }
 
+/*Tooltip*/
 .main-video_details-channel__tooltip {
   background-color: rgba(100, 100, 100, .9);
   color: white;
   padding: .8rem 1rem;
   border-radius: .5rem;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /*Avoiding any event when hovers the element*/
   transition: 0.3s;
-  position: absolute;
+  position: absolute;  /*Making it absolute to put it on top of the Video Title*/
     top: -5rem;
     left: -.8rem;
 }
 
+/*When hovers the Channel Name*/
 .main-video_details-channel__name:hover {
   color: rgb(215, 215, 215);
 }
 
+/*Channel Name Tooltip when hovers the Channel Name*/
 .main-video_details-channel__name:hover .main-video_details-channel__tooltip {
   opacity: 1;
 }
 
+/*Video Stats*/
 .main-video_details-stats {
   padding-top: .2rem;
 }
 
+/*Video Live*/
 .main-video_details-live {
   font-size: 1.2rem;
   font-weight: 600;
@@ -182,81 +209,105 @@
     gap: .7rem;
 }
 
+/*Live image*/
 .main-video_details-live_img {
   width: 1.5rem;
   margin-top: .1rem;
 }
 
+/*Not seen content*/
 .main-video_visualization-halo, .main-video_visualization-100v100 {
   background-color: gray;
   height: 100%;
   border-bottom-right-radius: 2rem;
 }
 
+/*Not seen content*/
 .main-video_visualization-halo {
   width: 37%;
 }
 
+/*Not seen content*/
 .main-video_visualization-100v100 {
   width: 34%;
 }
 
+/*When the Window is 512px or wider*/
 @media (min-width: 512px) {
+  /*Main content*/
   .main {
     padding: 2.5rem .3rem;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /*Implementing a second column to display the videos*/
       gap: 4rem 1.8rem;
   }
 }
 
+/*When the Window is 600px or wider*/
 @media (min-width: 600px) {
+  /*Main content*/
   .main {
     padding: 2.5rem;
   }
 }
 
+/*When the Window is 792px or wider*/
 @media (min-width: 792px) {
   body {
-    padding-left: 6.4rem;
+    padding-left: 6.4rem; /*Adding space for the Sidebar*/
   }
+  /*Main content*/
   .main {
     padding: 2.5rem 3rem 2.5rem 3.5rem;
   }
 }
 
+/*When the Window is 886px or wider*/
 @media (min-width: 886px) {
+  /*Main content*/
   .main {
     padding: 2.5rem 3.5rem;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; /*Implementing a third column to display the videos*/
   }
 }
 
+/*When the Window is 1144px or wider*/
 @media (min-width: 1144px) {
+  /*Main content*/
   .main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Implementing a fourth column to display the videos*/
   }
 }
 
+/*When the Window is 1313px or wider*/
 @media (min-width: 1313px) {
   body {
-    padding-left: 23.5rem;
+    padding-left: 23.5rem; /*Adding space for the Sidebar*/
   }
+  /*Main content*/
   .main {
     padding: 2.5rem 3.5rem;
   }
 }
 
+/*When the Window is 1630px or wider*/
 @media (min-width: 1630px) {
+  /*Main content*/
   .main {
     padding: 2.5rem 7rem;
       gap: 4rem 1.6rem;
   }
+
+  /*Video Container*/
   .main-video {
-    max-width: none;
+    max-width: none; /*Deleting the Maximum Width*/
   }
+
+  /*Video Title*/
   .main-video_details-title {
     font-size: 1.6rem;
   }
+
+  /*Video Information and Stats*/
   .main-video_details-channel, .main-video_details-stats {
     font-size: 1.4rem;
   }

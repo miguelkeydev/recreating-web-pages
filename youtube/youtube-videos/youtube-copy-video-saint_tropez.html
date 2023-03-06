@@ -9,14 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/yt-general.css">
   <link rel="stylesheet" href="../styles/yt-header.css">
+  <link rel="stylesheet" href="./styles/yt-video-main.css">
   <title>Post Malone - Saint-Tropez</title>
 </head>
 <body>
+  <!--Header-->
   <header class="header">
+    <!--Left side of the header-->
     <div class="header-left">
+      <!--Hamgburguer menu-->
       <figure class="header-left_menu">
         <img class="header-left_menu-img" src="../images/icons/hamburger-menu.svg" alt="Hamburguer Menu">
       </figure>
+      <!--YouTube Logo-->
       <a class="header-left_youtube-link" href="https://www.youtube.com">
         <figure class="header-left_youtube-logo">
             <img class="header-left_youtube-logo-img" src="../images/icons/youtube-logo.svg" alt="Youtube Colombia Logo">
@@ -26,7 +31,9 @@
         </figure>
       </a>
     </div>
+    <!--Central side of the header-->
     <div class="header-middle">
+      <!--Search bar-->
       <input class="header-middle_search-bar" type="text" placeholder="Search">
       <button class="header-middle_search-button">
         <img class="header-middle_search-button__img" src="../images/icons/search-icon.svg" alt="Magnifying Glass Icon">
@@ -34,6 +41,7 @@
           Search
         </span>
       </button>
+      <!--Voice Search-->
       <button class="header-middle_voice-search-button">
         <img class="header-middle_voice-search-button__img" src="../images/icons/voice-search-icon.svg" alt="Voice Search Icon">
         <span class="tooltip">
@@ -41,97 +49,157 @@
         </span>
       </button>
     </div>
+    <!--Right side of the header-->
     <div class="header-right">
+      <!--Upload Button-->
       <figure class="header-right_upload">
         <img class="header-right_upload-img" src="../images/icons/upload.svg" alt="Upload Icon">
         <span class="tooltip">
           Upload
         </span>
       </figure>
+      <!--Notifications Button-->
       <figure class="header-right_notifications">
         <img class="header-right_notifications-img" src="../images/icons/notifications.svg" alt="Notifications Icon">
+        <span class="header-right_notifications-number">
+          4
+        </span>
         <span class="tooltip">
           Notifications
         </span>
       </figure>
+      <!--Profile Picture-->
       <figure class="header-right_profile">
         <img class="header-right_profile-img" src="../images/channel-pictures/channel-profile-owner.jpg" alt="Profile Image">
       </figure>
     </div>
   </header>
+  <!--Main Content-->
   <main class="main">
-    <video class="main-video" src="./videos/y2mate.com - Post Malone  SaintTropez Official Video_1080p.mp4" controls>
-      Post Malone - Saint-Tropez (Official Video)
-    </video>
+    <!--Video Container-->
+    <div class="main-video">
+      <!--Video-->
+      <video class="video" src="./videos/y2mate.com - Post Malone  SaintTropez Official Video_1080p.mp4" controls>
+        Post Malone - Saint-Tropez (Official Video)
+      </video>
+      <!--Video More Info-->
+      <div class="main-video_moreinfo">
+        <img class="main-video_moreinfo-img" src="../images/icons/more-info.svg" alt="More Info Icon">
+        <!--More Info Tooltip-->
+        <span class="main-video_moreinfo-tooltip">
+          More info
+        </span>
+      </div>
+      <!--Video Channel Icon-->
+      <div class="main-video_channel-icon">
+        <img class="main-video_channel-img" src="../images/channel-icons/channel-icon-post.jpg" alt="Post Malone Channel Icon">
+        <!--Video Channel Icon Tooltip-->
+        <div class="main-video_channel-tooltip">
+          <span class="tooltip-channel_name">
+            Post Malone
+          </span>
+          <button class="tooltip-subscribe">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Video Title-->
     <h1 class="main-title">
       Post Malone - Saint-Tropez (Official Video)
     </h1>
+    <!--Channel Info-->
     <div class="main-channel">
+      <!--Channel image-->
       <img class="main-channel_img" src="../images/channel-pictures/channel-picture-post.jpg" alt="Post Malone Channel Picture">
+      <!--Channel further info-->
       <div class="main-channel_info">
+        <!--Channel Name-->
         <div class="main-channel_info-name">
           <span>
             Post Malone
           </span>
           <img src="../images/icons/music.svg" alt="Music Badge">
         </div>
+        <!--Channel Subscribers-->
         <span class="main-channel_info-subscribers">
           25M subscribers
         </span>
       </div>
+      <!--Channel Subscribe Button-->
       <button class="main-channel_subscribe">
         Subscribe
       </button>
     </div>
+    <!--Video Interactions-->
     <div class="main-interactions">
+      <!--Video Like-->
       <div class="main-interactions_like">
+        <!--Like button-->
         <button class="main-interactions_like-like">
           <img class="main-interactions_like-img" src="../images/icons/liked-videos.svg" alt="Like Icon">
           <span class="main-interactions_like-amount">
             1.2M
           </span>
         </button>
-        <button class="main-interactions_like-">
+        <!--Dislike buton-->
+        <button class="main-interactions_like-dislike">
           <img class="main-interactions_like-img" src="../images/icons/dislike.svg" alt="Dislike Icon">
         </button>
       </div>
+      <!--Share Button-->
       <div class="main-interactions_share">
         <button class="main-interactions_share-button">
           <img class="main-interactions_share-img" src="../images/icons/share.svg" alt="Share Icon">
-          Share
+          <span class="main-interactions_text">
+            Share
+          </span>
         </button>
       </div>
+      <!--Download button-->
       <div class="main-interactions_download">
         <button class="main-interactions_download-button">
           <img class="main-interactions_download-img" src="../images/icons/download.svg" alt="Download Icon">
-          Download
+          <span class="main-interactions_text">
+            Download
+          </span>
         </button>
       </div>
+      <!--More button-->
       <div class="main-interactions_more">
         <button class="main-interactions_more-button">
-          ...
+          <span class="main-interactions_text">
+            ...
+          </span>
         </button>
       </div>
     </div>
+    <!--Video Info-->
     <div class="main-info">
+      <!--Video Views-->
       <span class="main-info_views">
         115M views
       </span>
+      <!--Video Date-->
       <span class="main-info_date">
         3 years ago
       </span>
+      <!--Video Tags-->
       <span class="main-info_tags">
         #PostMalone #SaintTropez #HollywoodBleeding
       </span>
+      <!--Video Description-->
       <span class="main-info_description">
         Official music video by Post Malone performint "Saint-Tropez" -- off his new album 'Hollywood's Bleeding' available now:
       </span>
+      <!--Video Links-->
       <a href="https://postmalone.lnk.to/hollywoodsbleedingYD">
         <span class="main-info_link">
           https://postmalone.lnk.to/hollywoodsb...
         </span>
       </a>
     </div>
+    <!--Video Suggested-->
     <div class="main-suggested">
       <span class="main-suggested_suggester">
         Suggested by UMg
@@ -143,6 +211,7 @@
       </span>
     </div>
   </main>
+  <!--Topics-->
   <div class="topics">
     <button class="topics-button_all">
       All

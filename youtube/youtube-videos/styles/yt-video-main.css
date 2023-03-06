@@ -1,0 +1,112 @@
+body { /*Adding space for the Header*/
+  padding-top: 5.6rem;
+}
+
+/*Main container*/
+.main {
+  background-color: pink;
+  width: 100%;
+}
+
+/*Video and Video container*/
+.main-video, .video {
+  width: 100%;
+}
+
+/*Video container*/
+.main-video {
+  background-color: black;
+  height: 48rem;
+  position: relative; /*To allow elements on top of it*/
+  display: flex;
+    align-items: center;
+}
+
+/*More Info container*/
+.main-video_moreinfo {
+  width: 3rem;
+  position: absolute;
+    top: 1.5rem;
+    right: 1.2rem;
+}
+
+/*More Info image*/
+.main-video_moreinfo-img {
+  width: 2rem;
+}
+
+/*More Info Tooltip*/
+.main-video_moreinfo-tooltip {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  padding: .5rem .8rem;
+  border-radius: .4rem;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: .2s;
+  opacity: 0;
+  position: absolute;
+    left: -4.5rem;
+    bottom: -3.5rem;
+}
+
+/*More Info Tooltip when hovers More Info container*/
+.main-video_moreinfo:hover .main-video_moreinfo-tooltip {
+  opacity: 1;
+}
+
+/*Channel Icon container*/
+.main-video_channel-icon {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+    right: 1.5rem;
+    bottom: 5rem;
+}
+
+/*Channel Icon image*/
+.main-video_channel-img {
+  width: 100%;
+}
+
+/*Channel Icon Tooltip*/
+.main-video_channel-tooltip {
+  background-color: rgba(200, 200, 200, 0.1);
+  color: white;
+  padding: 1.1rem;
+  border: none;
+  border-radius: 1rem;
+  pointer-events: none;
+  transition: .2s;
+  opacity: 0;
+  position: absolute;
+    top: -3.5rem;
+    left: -15rem;
+  display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+/*Channel Name Tooltip*/
+.tooltip-channel_name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/*Channel Subscribe Tooltip*/
+.tooltip-subscribe {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: rgb(220, 0, 0);
+  color: inherit;
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 3rem;
+}
+
+/*Channel Icon Tooltip when hovers Channel Icon container*/
+.main-video_channel-icon:hover .main-video_channel-tooltip {
+  opacity: 1;
+}

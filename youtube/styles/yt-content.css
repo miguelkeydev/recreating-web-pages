@@ -1,16 +1,17 @@
 .main {
+  font-family: 'Roboto';
   width: 100%;
-  padding: 6rem 0 0 0;
+  padding: 6.5rem .4rem 0 0;
   position: relative;
   z-index: 8;
   display: grid;
-    grid-template-columns: 32rem;
-    justify-content: center;
-    gap: 1.8rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 4.3rem;
 }
 
 .main-video {
-  margin-bottom: 2.5rem;
+  max-width: 32rem;
   display: flex;
     flex-direction: column;
 }
@@ -200,19 +201,26 @@
   width: 34%;
 }
 
-@media (min-width: 511px) {
+@media (min-width: 512px) {
   .main {
-    padding: 2.5rem 7vw 0;
+    padding: 2.5rem .3rem;
       grid-template-columns: 1fr 1fr;
+      gap: 4rem 1.8rem;
   }
 }
 
-@media (min-width: 790px) {
+@media (min-width: 600px) {
+  .main {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 792px) {
   body {
     padding-left: 6.4rem;
   }
   .main {
-    padding: 2.5rem 7.5rem 0;
+    padding: 2.5rem 3rem 2.5rem 3.5rem;
   }
 }
 
@@ -225,21 +233,26 @@
 
 @media (min-width: 1144px) {
   .main {
-    padding: 2rem 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 1310px) {
+@media (min-width: 1313px) {
   body {
     padding-left: 23.5rem;
+  }
+  .main {
+    padding: 2.5rem 3.5rem;
   }
 }
 
 @media (min-width: 1630px) {
   .main {
     padding: 2.5rem 7rem;
-      gap: 1.6rem;
+      gap: 4rem 1.6rem;
+  }
+  .main-video {
+    max-width: none;
   }
   .main-video_details-title {
     font-size: 1.6rem;

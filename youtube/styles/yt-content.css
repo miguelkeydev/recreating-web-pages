@@ -30,7 +30,7 @@
 
 .main-video_time {
   font-size: 1.3rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--black-70);
   color: white;
   padding: 0rem .4rem .2rem;
   border: none;
@@ -62,7 +62,7 @@
 }
 
 .main-video_visualization {
-  background-color: red;
+  background-color: var(--red-youtube);
   width: 99%;
   height: .4rem;
   border-bottom-right-radius: 2rem;
@@ -74,7 +74,7 @@
 }
 
 .main-video_details {
-  padding: 1rem 0 0 0;
+  padding-top: 1rem;
   display: flex;
 }
 
@@ -143,7 +143,7 @@
 }
 
 .main-video_details-channel__tooltip {
-  background-color: rgba(100, 100, 100, .9);
+  background-color: var(--gray-tooltip);
   color: white;
   padding: .8rem 1rem;
   border-radius: .5rem;
@@ -170,7 +170,7 @@
 .main-video_details-live {
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: rgb(180, 1, 1);
+  background-color: rgb(180, 0, 0);
   color: white;
   width: 5.7rem;
   padding: .1rem .4rem;

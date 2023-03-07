@@ -1,3 +1,18 @@
+:root {
+  --black-background: #0f0f0f;
+  --black-70: rgba(0, 0, 0, 0.7);
+  --black-3: rgba(255, 255, 255, 0.03);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-15: rgba(255, 255, 255, 0.15);
+  --white-10: rgba(255, 255, 255, 0.10);
+  --white-gray: rgb(200, 200, 200);
+  --gray-tooltip: rgba(100, 100, 100, 0.9);
+  --red-youtube: rgb(230, 0, 0);
+  --red-dark: rgb(85, 0, 0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,17 +24,17 @@ html {
 }
 
 body {
-  background-color: #0f0f0f;
+  background-color: var(--black-background);
   padding-top: 11.2rem;
 }
 
 body::-webkit-scrollbar {
-  background-color: #0f0f0f;
+  background-color: var(--black-background);
   width: .8rem;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--white-7);
   border-radius: 1rem;
 }
 

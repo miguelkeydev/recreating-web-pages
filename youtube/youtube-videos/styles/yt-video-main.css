@@ -364,8 +364,12 @@ body { /*Adding space for the Header*/
 
 /*Volume Toltip*/
 .volume-tooltip {
-    top: -6.2rem;
-    right: -.3rem;
+    top: -6.9rem;
+    right: -.2rem;
+}
+
+.video-panel_sound-range:hover .volume-tooltip {
+  opacity: 1;
 }
 
 /*Video Length*/

@@ -4,14 +4,13 @@ body { /*Adding space for the Header*/
 
 /*Main container*/
 .main {
-  background-color: pink;
-  width: 100%;
+  width: 97%;
   display: flex;
     flex-direction: column;
 }
 
 /*Video and Video container*/
-.main-video, .video {
+.main-video, .video-img {
   width: 100%;
 }
 
@@ -25,62 +24,71 @@ body { /*Adding space for the Header*/
 }
 
 /*More Info container*/
-.main-video_moreinfo {
+.video-moreinfo {
   width: 3rem;
   position: absolute;
     top: 1.5rem;
-    right: 1.2rem;
+    right: 1.5rem;
+  display: flex;
+    justify-content: center;
 }
 
 /*More Info image*/
-.main-video_moreinfo-img {
+.video-moreinfo_img {
   width: 2rem;
 }
 
 /*More Info Tooltip*/
-.main-video_moreinfo-tooltip {
+.video-moreinfo_tooltip {
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: rgb(26, 26, 26);
+  background-color: var(--white-10);
   color: white;
   padding: .5rem .8rem;
   border-radius: .4rem;
-  white-space: nowrap;
-  pointer-events: none;
+  white-space: nowrap; /*Avoiding Line Breaks*/
+  pointer-events: none; /*Avoiding events when hover it*/
   transition: .2s;
   opacity: 0;
   position: absolute;
-    left: -4.5rem;
     bottom: -3.5rem;
+    left: -4.5rem;
 }
 
 /*More Info Tooltip when hovers More Info container*/
-.main-video_moreinfo:hover .main-video_moreinfo-tooltip {
+.video-moreinfo:hover .video-moreinfo_tooltip {
   opacity: 1;
 }
 
 /*Channel Icon container*/
-.main-video_channel-icon {
+.video-channel_icon {
   width: 4rem;
   height: 4rem;
+  transition: .2s;
   position: absolute;
-    right: 1.5rem;
-    bottom: 5rem;
+    right: 1rem;
+    bottom: 1.2rem;
+}
+
+/*Channel Icon container when hovers the Video container*/
+.main-video:hover .video-channel_icon {
+  bottom: 5rem;
 }
 
 /*Channel Icon image*/
-.main-video_channel-img {
+.video-channel_img {
   width: 100%;
+  opacity: .5;
 }
 
 /*Channel Icon Tooltip*/
-.main-video_channel-tooltip {
-  background-color: rgba(200, 200, 200, 0.1);
+.video-channel_tooltip {
+  background-color: var(--gray-dark-tooltip);
   color: white;
   padding: 1.1rem;
   border: none;
   border-radius: 1rem;
-  pointer-events: none;
+  pointer-events: none; /*Avoiding events when hover it*/
   transition: .2s;
   opacity: 0;
   position: absolute;
@@ -91,13 +99,13 @@ body { /*Adding space for the Header*/
     gap: .7rem;
 }
 
-/*Channel Name Tooltip*/
+/*Channel Name Icon Tooltip*/
 .tooltip-channel_name {
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-/*Channel Subscribe Tooltip*/
+/*Channel Subscribe Icon Tooltip*/
 .tooltip-subscribe {
   font-size: 1.3rem;
   font-weight: 600;
@@ -109,14 +117,282 @@ body { /*Adding space for the Header*/
 }
 
 /*Channel Icon Tooltip when hovers Channel Icon container*/
-.main-video_channel-icon:hover .main-video_channel-tooltip {
+.video-channel_icon:hover .video-channel_tooltip {
   opacity: 1;
 }
 
-/*Video Title*/
-.main-title {
-  background-color: ;
-  color: white;
-  width: 100%;
+/*Video Panel*/
+.video-panel {
+  height: 4rem;
+  padding: 0 .5rem;
+  opacity: 0;
+  transition: .2s;
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/*Making the Video Panel appear*/
+.main-video:hover .video-panel {
+  opacity: 1;
+}
+
+/*Video Visualization*/
+.video-panel_visualization {
+  background-color: transparent;
+  width: 97%;
+  height: .6rem; /*Using .6rem of 4.rem*/
+  cursor: pointer;
+  transition: .2s;
+  display: flex; /*Putting the elements at the end, so the bar will look shorter until hovers it*/
+    align-items: end;
+    justify-content: end;
+}
+
+/*Seen, Charged and Unseen Visualizations*/
+.video-panel_visualization-seen, .video-panel_visualization-charged, .video-panel_visualization-unseen {
+  height: 50%; /*Making the bar looking half-high*/
+  border-radius: .1rem;
+  transition: .2s;
+}
+
+/*Seen Visualization*/
+.video-panel_visualization-seen {
+  background-color: var(--red-youtube);
+  width: 9%;
+  position: relative;
+}
+
+/*Seen Pointer*/
+.video-panel_visualization-pointer {
+  background-color: var(--red-youtube);
+  width: .1rem;
+  height: .1rem;
+  border-radius: 100%;
+  transition: .2s;
+  position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*Charged Visualization*/
+.video-panel_visualization-charged {
+  background-color: var(--gray-light);
+  width: 22%;
+}
+/*Non Visualization*/
+.video-panel_visualization-unseen {
+  background-color: var(--white-15);
+  flex: 1;
+}
+
+/*Making the Visualization Bar looking higher*/
+.video-panel_visualization:hover .video-panel_visualization-seen, .video-panel_visualization:hover .video-panel_visualization-charged, .video-panel_visualization:hover .video-panel_visualization-unseen  {
+  height: 80%;
+}
+
+/*Making the Seen Pointer appear*/
+.video-panel_visualization:hover .video-panel_visualization-pointer {
+  width: 1.3rem;
+  height: 1.3rem;
+    top: -.4rem;
+    right: 0;
+}
+
+/*Controls*/
+.video-panel_controls {
+  width: 97%; /*Letting space on the sides*/
+  height: 3.4rem; /*Using 3.4rem of 4rem*/
+  display: flex;
+    justify-content: space-between;
+}
+
+/*Left Controls*/
+.video-panel_controls-left {
+  width: 20rem;
+  white-space: nowrap; /*Avoiding line breaks on Video Length*/
+  position: relative;
+    z-index: 5; /*Putting it behind Right Controls, so the overflow content will disappear*/
+  display: flex; /*Allowing the buttons go horizontally*/
+}
+
+/*Controls Figures*/
+.video-panel_fig {
+  height: 100%; /*Making all the figures as high as the Controls Panel*/
+  width: 3.5rem;
+  position: relative;
+  display: flex; /*Centering the objects*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*Controls Tooltip*/
+.video-panel_tooltip {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: var(--white-10);
+  color: white;
+  padding: .5rem .8rem;
+  border-radius: .4rem;
+  white-space: nowrap; /*Avoiding Line Breaks*/
+  pointer-events: none; /*Avoiding events when hover it*/
+  transition: .25s;
+  opacity: 0;
+  position: absolute;
+    top: -5.5rem;
+    right: -2.5rem;
+}
+
+/*Making the tooltips appear. When a figure is hovered, it'l search for its child tooltip to show it*/
+.video-panel_fig:hover .video-panel_tooltip {
+  opacity: 1;
+}
+
+/*Play, Next Video, Sound Images*/
+.video-panel_img-play, .video-panel_img-next, .video-panel_img-sound {
+  height: 55%;
+}
+
+/*Next Video Image*/
+.video-panel_img-next {
+  margin-top: .5rem;
+}
+
+/*Next Video Tooltip*/
+.next-video_tooltip {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: var(--gray-dark-tooltip);
+  padding: .2rem;
+  border-radius: 1.5rem;
+  opacity: 0;
+  display: flex;
+    top: -12.5rem;
+    right: -25.5rem;
+}
+
+/*Next Video Tooltip figure*/
+.next-video_tooltip-fig {
+  width: 16rem;
+  position: relative;
+}
+
+/*Next Video Tooltip image*/
+.next-video_tooltip-img {
+  width: 100%;
+  height: 100%;
+  border-start-start-radius: 1.5rem; /*Border radius only on the left*/
+}
+
+/*Next Video Tooltip Time*/
+.next-video_tooltip-time {
+  font-size: 1.2rem;
+  background-color: var(--gray-dark-tooltip);
+  padding: .05rem .3rem;
+  border-radius: .2rem;
+  position: absolute;
+    right: .2rem;
+    bottom: .2rem;
+}
+
+/*Next Video Tooltip Info*/
+.next-video_tooltip-info {
+  width: 16rem;
+  padding: .2rem 1.3rem;
+  white-space: normal;
+  display: flex; /*Centering the information vertically*/
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Next Video Tooltip Shortcut*/
+.next-video_tooltip-shortcut {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gray-light);
+  margin-bottom: -.2rem;
+}
+
+/*Sound Container*/
+.video-panel_sound {
+  position: relative; /*To allow Volume Bar and Video Length as Absolute elements*/
+  display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/*Sound Image*/
+.video-panel_img-sound {
+  margin-top: .5rem;
+}
+
+/*Volume container*/
+.video-panel_sound-range {
+  margin-bottom: .4rem;
+  transition: .3s;
+  position: absolute;
+    right: -5.5rem;
+  display: none;
+}
+
+/*Making the Volume appear*/
+.video-panel_sound:hover .video-panel_sound-range {
+  display: flex;
+}
+
+/*Volume Bar*/
+.video-panel_sound-input {
+  -webkit-appearance: none; /*Eliminating the standard styles to proceed adding custom styles*/
+  appearance: inherit;
+  background: linear-gradient(to right, white 0%, white calc(50% - 2.5px), var(--white-15) calc(50% + 2.5px), var(--white-15) 100%); /*Painting the left side of the bar White and the right side Gray*/
+  width: 5.5rem;
+  height: .3rem;
+}
+
+/*Volume Pointer*/
+.video-panel_sound-input::-webkit-slider-thumb {
+  -webkit-appearance: none; /*Eliminating the standard styles to proceed adding custom styles*/
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: white;
+  border-radius: 100%;
+}
+
+/*Volume Toltip*/
+.volume-tooltip {
+    top: -6.2rem;
+    right: -.3rem;
+}
+
+/*Video Length*/
+.video-panel_length {
+  font-size: 1.2rem;
+  background-color: black; /*To cover the Volume bar*/
+  color: white;
+  padding: 0 1rem;
+  pointer-events: none;
+  transition: .3s;
+  position: absolute;
+    top: .9rem;
+    right: -7.5rem;
+    z-index: 12;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Moving the Video Length when hovers the Sound image*/
+.video-panel_sound:hover .video-panel_length {
+    right: -13rem;
+}
+
+.video-panel_controls-right {
+  background-color: black;
+  flex: 1;
+  position: relative;
+  z-index: 10;
 }

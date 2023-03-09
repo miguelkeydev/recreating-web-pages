@@ -7,7 +7,10 @@
   <!--Adding 'Roboto' font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!--Adding styles-->
   <link rel="stylesheet" href="../styles/yt-general.css">
   <link rel="stylesheet" href="../styles/yt-header.css">
@@ -81,22 +84,20 @@
     <!--Video Container-->
     <div class="main-video">
       <!--Video-->
-      <video class="video" src="./videos/y2mate.com - Post Malone  SaintTropez Official Video_1080p.mp4" controls>
-        Post Malone - Saint-Tropez (Official Video)
-      </video>
+      <img class="video-img" src="./videos/video-image-saint.jpg" alt="Saint Tropez Video Image">
       <!--Video More Info-->
-      <div class="main-video_moreinfo">
-        <img class="main-video_moreinfo-img" src="../images/icons/more-info.svg" alt="More Info Icon">
+      <div class="video-moreinfo">
+        <img class="video-moreinfo_img" src="../images/icons/more-info.svg" alt="More Info Icon">
         <!--More Info Tooltip-->
-        <span class="main-video_moreinfo-tooltip">
+        <span class="video-moreinfo_tooltip">
           More info
         </span>
       </div>
       <!--Video Channel Icon-->
-      <div class="main-video_channel-icon">
-        <img class="main-video_channel-img" src="../images/channel-icons/channel-icon-post.jpg" alt="Post Malone Channel Icon">
+      <div class="video-channel_icon">
+        <img class="video-channel_img" src="../images/channel-icons/channel-icon-post.jpg" alt="Post Malone Channel Icon">
         <!--Video Channel Icon Tooltip-->
-        <div class="main-video_channel-tooltip">
+        <div class="video-channel_tooltip">
           <span class="tooltip-channel_name">
             Post Malone
           </span>
@@ -105,131 +106,103 @@
           </button>
         </div>
       </div>
-    </div>
-    <!--Video Title-->
-    <h1 class="main-title">
-      Post Malone - Saint-Tropez (Official Video)
-    </h1>
-    <!--Channel Info-->
-    <div class="main-channel">
-      <!--Channel image-->
-      <img class="main-channel_img" src="../images/channel-pictures/channel-picture-post.jpg" alt="Post Malone Channel Picture">
-      <!--Channel further info-->
-      <div class="main-channel_info">
-        <!--Channel Name-->
-        <div class="main-channel_info-name">
-          <span>
-            Post Malone
-          </span>
-          <img src="../images/icons/music.svg" alt="Music Badge">
+      <!--Video Controls Container-->
+      <div class="video-panel">
+        <!--Video Visualization-->
+        <div class="video-panel_visualization">
+          <!--Video Visualization Seen-->
+          <div class="video-panel_visualization-seen">
+            <!--Video Visualization Pointer-->
+            <span class="video-panel_visualization-pointer">
+            </span>
+          </div>
+          <!--Video Visualization Charged-->
+          <div class="video-panel_visualization-charged">
+          </div>
+          <!--Video Visualization Unseen-->
+          <div class="video-panel_visualization-unseen">
+          </div>
         </div>
-        <!--Channel Subscribers-->
-        <span class="main-channel_info-subscribers">
-          25M subscribers
-        </span>
+        <!--Video Controls Panel-->
+        <div class="video-panel_controls">
+          <!--Video Controls Left-->
+          <div class="video-panel_controls-left">
+            <!--Play-->
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-play" src="../images/icons/play.svg" alt="Play Icon">
+              <!--Play Tooltip-->
+              <span class="video-panel_tooltip">
+                Play (k)
+              </span>
+            </figure>
+            <!--Next Video-->
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-next" src="../images/icons/next.svg" alt="Next Video Icon">
+              <!--Next Video Tooltip-->
+              <div class="video-panel_tooltip next-video_tooltip">
+                <!--Next Video Tooltip Image-->
+                <figure class="next-video_tooltip-fig">
+                  <img class="next-video_tooltip-img" src="../images/video-pictures/video-picture-veins.jpg" alt="Lil Peep - Veins Image">
+                  <span class="next-video_tooltip-time">
+                    3:31
+                  </span>
+                </figure>
+                <!--Next Video Tooltip Info-->
+                <div class="next-video_tooltip-info">
+                  <span class="next-video_tooltip-shortcut">
+                    NEXT (SHIFT+N)
+                  </span>
+                  <span class="next-video_tooltip-title">
+                    Lil Peep - Veins (prod. Greaf)
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <!--Sound-->
+            <div class="video-panel_sound">
+              <figure class="video-panel_fig video-panel_fig-sound">
+                <img class="video-panel_img-sound" src="../images/icons/sound.svg" alt="Sound Icon">
+                <!--Sound Tooltip-->
+                <span class="video-panel_tooltip">
+                  Mute (m)
+                </span>
+              </figure>
+              <!--Sound Volume-->
+              <div class="video-panel_sound-range">
+                <input class="video-panel_sound-input" type="range">
+                <!--Volume Tooltip-->
+                <span class="video-panel_tooltip volume-tooltip">
+                  Volume
+                </span>
+              </div>
+              <!--Video Length-->
+              <div class="video-panel_length">
+                <span class="video-panel_length-text">
+                  0:12 &#x2f; 2:36
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="video-panel_controls-right">
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+          </div>
+        </div>
       </div>
-      <!--Channel Subscribe Button-->
-      <button class="main-channel_subscribe">
-        Subscribe
-      </button>
-    </div>
-    <!--Video Interactions-->
-    <div class="main-interactions">
-      <!--Video Like-->
-      <div class="main-interactions_like">
-        <!--Like button-->
-        <button class="main-interactions_like-like">
-          <img class="main-interactions_like-img" src="../images/icons/liked-videos.svg" alt="Like Icon">
-          <span class="main-interactions_like-amount">
-            1.2M
-          </span>
-        </button>
-        <!--Dislike buton-->
-        <button class="main-interactions_like-dislike">
-          <img class="main-interactions_like-img" src="../images/icons/dislike.svg" alt="Dislike Icon">
-        </button>
-      </div>
-      <!--Share Button-->
-      <div class="main-interactions_share">
-        <button class="main-interactions_share-button">
-          <img class="main-interactions_share-img" src="../images/icons/share.svg" alt="Share Icon">
-          <span class="main-interactions_text">
-            Share
-          </span>
-        </button>
-      </div>
-      <!--Download button-->
-      <div class="main-interactions_download">
-        <button class="main-interactions_download-button">
-          <img class="main-interactions_download-img" src="../images/icons/download.svg" alt="Download Icon">
-          <span class="main-interactions_text">
-            Download
-          </span>
-        </button>
-      </div>
-      <!--More button-->
-      <div class="main-interactions_more">
-        <button class="main-interactions_more-button">
-          <span class="main-interactions_text">
-            ...
-          </span>
-        </button>
-      </div>
-    </div>
-    <!--Video Info-->
-    <div class="main-info">
-      <!--Video Views-->
-      <span class="main-info_views">
-        115M views
-      </span>
-      <!--Video Date-->
-      <span class="main-info_date">
-        3 years ago
-      </span>
-      <!--Video Tags-->
-      <span class="main-info_tags">
-        #PostMalone #SaintTropez #HollywoodBleeding
-      </span>
-      <!--Video Description-->
-      <span class="main-info_description">
-        Official music video by Post Malone performint "Saint-Tropez" -- off his new album 'Hollywood's Bleeding' available now:
-      </span>
-      <!--Video Links-->
-      <a href="https://postmalone.lnk.to/hollywoodsbleedingYD">
-        <span class="main-info_link">
-          https://postmalone.lnk.to/hollywoodsb...
-        </span>
-      </a>
-    </div>
-    <!--Video Suggested-->
-    <div class="main-suggested">
-      <span class="main-suggested_suggester">
-        Suggested by UMg
-      </span>
-      <span class="main-suggested_video">
-        <a href="https://www.youtube.com/watch?v=lCiV4wACZ8w">
-          Post Malone - Motley Crew (Official Video)
-        </a>
-      </span>
     </div>
   </main>
-  <!--Topics-->
-  <div class="topics">
-    <button class="topics-button_all">
-      All
-    </button>
-    <button class="topics-button">
-      Related
-    </button>
-    <button class="topics-button">
-      Live
-    </button>
-    <button class="topics-button">
-      Recently uploaded
-    </button>
-    <button class="topics-button">
-      Watched
-    </button>
-  </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /*Topics*/
 .topics {
-  background-color: #0f0f0f;
+  background-color: var(--black-background);
   height: 5.6rem;
   padding: 0 3rem;
   position: fixed;
@@ -17,7 +17,7 @@
 .topics-button {
   font-size: 1.4rem;
   font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--white-10);
   color: white;
   padding: .85rem 1.3rem;
   border: none;
@@ -35,7 +35,7 @@
 
 /*When hovers the general button*/
 .topics-button:hover {
-background-color: rgba(255, 255, 255, 0.2);
+background-color: var(--white-20);
 }
 
 /*When hovers the Music button*/
@@ -45,13 +45,13 @@ background-color: rgba(255, 255, 255, 0.2);
 
 /*Next button*/
 .topics-next {
-  background-color: #0f0f0f;
+  background-color: var(--black-background);
   height: 5rem;
   width: 6rem;
   padding-right: .7rem;
   border: none;
-  box-shadow: -2rem 0 1rem #0f0f0f; /*Adding a difumination effect on its left side*/
-  position: absolute; /*Making this element able to be on top of general buttons*/
+  box-shadow: -2rem 0 1rem var(--black-background);
+  position: absolute;
     right: 0;
   display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ background-color: rgba(255, 255, 255, 0.2);
 /*Next Arrow*/
 .topics-next_arrow {
   font-size: 1.4rem;
-  background-color: #0f0f0f;
+  background-color: var(--black-background);
   color: white;
   padding: 1.2rem 1.6rem;
   border: none;
@@ -72,13 +72,13 @@ background-color: rgba(255, 255, 255, 0.2);
 
 /*When hovers the Next Arrow*/
 .topics-next_arrow:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--white-20);
 }
 
 /*Tooltip from Next button*/
 .topics-tooltip {
   font-size: 1.2rem;
-  background-color: rgba(100, 100, 100, 0.8);
+  background-color: var(--gray-tooltip);
   color: white;
   padding: 1rem .6rem;
   border: none;

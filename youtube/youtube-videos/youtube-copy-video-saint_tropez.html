@@ -7,13 +7,18 @@
   <!--Adding 'Roboto' font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!--Adding styles-->
   <link rel="stylesheet" href="../styles/yt-general.css">
   <link rel="stylesheet" href="../styles/yt-header.css">
+  <link rel="stylesheet" href="./styles/yt-video-main.css">
   <title>Post Malone - Saint-Tropez</title>
 </head>
 <body>
+  <!--Header-->
   <header class="header">
     <!--Left side of the header-->
     <div class="header-left">
@@ -74,5 +79,130 @@
       </figure>
     </div>
   </header>
+  <!--Main Content-->
+  <main class="main">
+    <!--Video Container-->
+    <div class="main-video">
+      <!--Video-->
+      <img class="video-img" src="./videos/video-image-saint.jpg" alt="Saint Tropez Video Image">
+      <!--Video More Info-->
+      <div class="video-moreinfo">
+        <img class="video-moreinfo_img" src="../images/icons/more-info.svg" alt="More Info Icon">
+        <!--More Info Tooltip-->
+        <span class="video-moreinfo_tooltip">
+          More info
+        </span>
+      </div>
+      <!--Video Channel Icon-->
+      <div class="video-channel_icon">
+        <img class="video-channel_img" src="../images/channel-icons/channel-icon-post.jpg" alt="Post Malone Channel Icon">
+        <!--Video Channel Icon Tooltip-->
+        <div class="video-channel_tooltip">
+          <span class="tooltip-channel_name">
+            Post Malone
+          </span>
+          <button class="tooltip-subscribe">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <!--Video Controls Container-->
+      <div class="video-panel">
+        <!--Video Visualization-->
+        <div class="video-panel_visualization">
+          <!--Video Visualization Seen-->
+          <div class="video-panel_visualization-seen">
+            <!--Video Visualization Pointer-->
+            <span class="video-panel_visualization-pointer">
+            </span>
+          </div>
+          <!--Video Visualization Charged-->
+          <div class="video-panel_visualization-charged">
+          </div>
+          <!--Video Visualization Unseen-->
+          <div class="video-panel_visualization-unseen">
+          </div>
+        </div>
+        <!--Video Controls Panel-->
+        <div class="video-panel_controls">
+          <!--Video Controls Left-->
+          <div class="video-panel_controls-left">
+            <!--Play-->
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-play" src="../images/icons/play.svg" alt="Play Icon">
+              <!--Play Tooltip-->
+              <span class="video-panel_tooltip">
+                Play (k)
+              </span>
+            </figure>
+            <!--Next Video-->
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-next" src="../images/icons/next.svg" alt="Next Video Icon">
+              <!--Next Video Tooltip-->
+              <div class="video-panel_tooltip next-video_tooltip">
+                <!--Next Video Tooltip Image-->
+                <figure class="next-video_tooltip-fig">
+                  <img class="next-video_tooltip-img" src="../images/video-pictures/video-picture-veins.jpg" alt="Lil Peep - Veins Image">
+                  <span class="next-video_tooltip-time">
+                    3:31
+                  </span>
+                </figure>
+                <!--Next Video Tooltip Info-->
+                <div class="next-video_tooltip-info">
+                  <span class="next-video_tooltip-shortcut">
+                    NEXT (SHIFT+N)
+                  </span>
+                  <span class="next-video_tooltip-title">
+                    Lil Peep - Veins (prod. Greaf)
+                  </span>
+                </div>
+              </div>
+            </figure>
+            <!--Sound-->
+            <div class="video-panel_sound">
+              <figure class="video-panel_fig video-panel_fig-sound">
+                <img class="video-panel_img-sound" src="../images/icons/sound.svg" alt="Sound Icon">
+                <!--Sound Tooltip-->
+                <span class="video-panel_tooltip">
+                  Mute (m)
+                </span>
+              </figure>
+              <!--Sound Volume-->
+              <div class="video-panel_sound-range">
+                <input class="video-panel_sound-input" type="range">
+                <!--Volume Tooltip-->
+                <span class="video-panel_tooltip volume-tooltip">
+                  Volume
+                </span>
+              </div>
+              <!--Video Length-->
+              <div class="video-panel_length">
+                <span class="video-panel_length-text">
+                  0:12 &#x2f; 2:36
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="video-panel_controls-right">
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+            <figure class="video-panel_fig">
+              <img class="video-panel_img-" src="" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

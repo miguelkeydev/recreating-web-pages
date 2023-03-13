@@ -1,0 +1,372 @@
+/*Video Information Container*/
+.main-info {
+  color: white;
+  padding: 1.5rem 0 2.5rem 2rem;
+}
+
+/*Video Title*/
+.info-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  width: 100%;
+  padding-bottom: 1.2rem;
+}
+
+/*Channel Info*/
+.info-channel {
+  width: 100%;
+  padding-bottom: 1.5rem;
+  display: flex;
+    align-items: center;
+}
+
+/*Channel figure*/
+.info-channel_fig {
+  width: 5rem;
+}
+
+/*Channel image*/
+.info-channel_img {
+  width: 4rem;
+  border-radius: 100%;
+}
+
+/*Channel Further info*/
+.info-channel_account {
+  width: 14rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .2rem;
+}
+
+/*Channel Name*/
+.info-channel_account-name {
+  display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/*Channel Visible Name*/
+.info-channel_account-name__name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: relative;
+}
+
+/*Channel Badge*/
+.info-channel_account-badge {
+  position: relative;
+  display: flex; /*Centering the Badge*/
+    align-items: center;
+}
+
+/*Channel Badge image*/
+.info-channel_account-badge__badge {
+  width: 1.2rem;
+}
+
+/*Channel Name and Channel Badge Tooltips*/
+.info-channel_account-name__tooltip, .info-channel_account-badge__tooltip {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: var(--gray-tooltip);
+  padding: .9rem 1rem;
+  border-radius: .5rem;
+  white-space: nowrap;
+  pointer-events: none; /*Avoiding any event when hovers the element*/
+  opacity: 0;
+  transition: 0.2s;
+  position: absolute;  /*Making it absolute to put it on top of the Video Title*/
+    top: -6rem;
+    left: .3rem;
+}
+
+/*Channel Badge Tooltip*/
+.info-channel_account-badge__tooltip {
+  top: -6.5rem;
+  left: -5.5rem;
+}
+
+/*Channel Name Tooltip when hovers Channel Name*/
+.info-channel_account-name__name:hover .info-channel_account-name__tooltip, .info-channel_account-badge:hover .info-channel_account-badge__tooltip {
+  opacity: 1;
+}
+
+/*Channel Subscribers*/
+.info-channel_account-subscribers {
+  font-size: 1.2rem;
+  color: var(--white-50);
+}
+
+/*Subscribe button*/
+.info-channel_subscribe {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: white;
+  color: var(--black-70);
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: .15s;
+}
+
+/*Subscribe button when hovers*/
+.info-channel_subscribe:hover {
+  background-color: var(--white-80);
+}
+
+/*Interactions*/
+.info-interactions {
+  padding-bottom: 1.3rem;
+  position: relative;
+    z-index: 10; /*To put the tooltips on top of the Video Info container*/
+  display: flex;
+    gap: .8rem;
+}
+
+/*Video Like, Share, Download, and More containers*/
+.info-interactions_like, .info-interactions_share, .info-interactions_download, .info-interactions_more {
+  background-color: var(--black-10);
+  height: 3.6rem;
+  border-radius: 2rem;
+  transition: .15s;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*When hovers Video Like, Dislike, Share, Download, and More containers*/
+.info-interactions_like-like:hover, .info-interactions_like-dislike:hover, .info-interactions_share:hover, .info-interactions_download:hover, .info-interactions_more:hover {
+  background-color: var(--black-18);
+}
+
+/*Like Button when Hovers*/
+.info-interactions_like-like:hover {
+  border-start-start-radius: 2rem;
+  border-end-start-radius: 2rem;
+}
+
+/*Dislike Button when hovers*/
+.info-interactions_like-dislike:hover {
+  border-start-end-radius: 2rem;
+  border-end-end-radius: 2rem;
+}
+
+/*Like, Dislike, Share, Download, and More buttons*/
+.info-interactions_like-like, .info-interactions_like-dislike, .info-interactions_share-button, .info-interactions_download-button, .info-interactions_more-button {
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  position: relative; /*To allow tooltips*/
+  display: flex;
+    align-items: center;
+}
+
+/*Video Like*/
+.info-interactions_like {
+  justify-content: space-between;
+}
+
+/*Like button*/
+.info-interactions_like-like { 
+  width: 8.7rem;
+  padding-left: 1rem;
+    gap: .8rem;
+}
+
+/*Like Icon*/
+.info-interactions_like-img__like {
+  width: 2.2rem;
+  margin-top: .3rem;
+}
+
+/*Dislike button*/
+.info-interactions_like-dislike {
+  width: 5.8rem;
+}
+
+/*Dislike figure*/
+.info-interactions_like-fig__dislike {
+  width: 2rem;
+  height: 2.8rem;
+  padding-left: 1rem;
+  border-left: .1rem solid var(--white-20);
+  display: flex;
+    align-items: center;
+}
+
+/*Dislike Icon*/
+.info-interactions_like-img__dislike {
+  width: 2rem;
+  margin-left: .5rem;
+}
+
+/*Interactions Text*/
+.info-interactions_text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: .2rem;
+}
+
+/*Interactions Tooltip*/
+.info-interactions_tooltip {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: var(--gray-tooltip);
+  color: white;
+  padding: .8rem 1rem;
+  border-radius: .4rem;
+  white-space: nowrap; /*Avoiding Line Breaks*/
+  pointer-events: none; /*Avoiding events when hover it*/
+  transition: .2s;
+  opacity: 0;
+  position: absolute;
+    left: 1rem;
+    bottom: -4.8rem;
+}
+
+.dislike-tooltip {
+  left: -1.8rem;
+}
+
+/*Activating the Interaction Tooltips*/
+.info-interactions_like-like:hover .like-tooltip, .info-interactions_like-dislike:hover .dislike-tooltip, .info-interactions_share:hover .share-tooltip, .info-interactions_download:hover .download-tooltip {
+  opacity: 1;
+}
+
+/*Share*/
+.info-interactions_share {
+  padding: 0 1.5rem 0 1rem;
+}
+
+/*Share button*/
+.info-interactions_share-button {
+  gap: .7rem;
+}
+
+/*Share Icon*/
+.info-interactions_share-img {
+  width: 2.2rem;
+}
+
+/*Download*/
+.info-interactions_download {
+  padding: 0 1.6rem 0 1.2rem;
+}
+
+/*Download button*/
+.info-interactions_download-button {
+    gap: 1rem;
+}
+
+/*Download Icon*/
+.info-interactions_download-img {
+  width: 2rem;
+}
+
+/*More*/
+.info-interactions_more {
+  padding: 0 .8rem;
+}
+
+/*More Text*/
+.info-interactions_more-text {
+  font-size: 2.4rem;
+  color: white;
+  margin-bottom: 1.3rem;
+}
+
+/*Video Description*/
+.info-description {
+  font-size: 1.4rem;
+  background-color: var(--black-10);
+  color: white;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  overflow: hidden; /*Hiding overflowing content (Tooltip)*/
+  transition: .15s;
+  position: relative;
+    z-index: 5;
+}
+
+/*When hovers Video Description*/
+.info-description:hover {
+  background-color: var(--black-18);
+}
+
+/*Video Description Stats*/
+.info-description_stats {
+  font-weight: 600;
+  white-space: nowrap; /*Making this container one line only*/
+  position: relative;
+}
+
+/*Video Description Views and Date*/
+.info-description_views, .info-description_date {
+  margin-right: .4rem;
+}
+
+/*Video Description Tags*/
+.info-description_tags {
+  color: var(--white-50);
+}
+
+/*Video Description Tooltip*/
+.info-description_tooltip {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: var(--gray-tooltip);
+  width: 80%;
+  padding: .8rem 1rem;
+  border-radius: .4rem;
+  white-space: normal;
+  pointer-events: none;
+  transition: .2s;
+  opacity: 0;
+  position: absolute;
+    right: 0;
+    bottom: -6.8rem;
+    z-index: 5;
+}
+
+.info-description_stats:hover .info-description_tooltip {
+  opacity: 1;
+}
+
+/*Video Info Show More*/
+.info-description_showmore {
+  font-weight: 600;
+  box-shadow: -1.5rem 0rem 1rem 0rem rgb(40, 40, 40);
+}
+
+/*Video Info Shadow*/
+.info-description_shadow {
+  background: linear-gradient(to right, transparent, rgb(40, 40, 40) 80%);
+  width: 5rem;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Video Suggested*/
+.info-suggested {
+  font-size: 1.4rem;
+  padding: .7rem 0;
+  display: flex;
+}
+
+/*Suggested by*/
+.info-suggested_suggester {
+  color: var(--white-50);
+  width: 11.5rem;
+}
+
+/*Video Info Link and Suggesded Video*/
+.info-description_link, .info-suggested_video {
+  color: var(--blue-link) ;
+}

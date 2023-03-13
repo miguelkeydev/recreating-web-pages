@@ -152,7 +152,6 @@ body { /*Adding space for the Header*/
   background-color: transparent;
   width: 97%;
   height: .6rem; /*Using .6rem of 4.rem*/
-  cursor: pointer;
   transition: .2s;
   display: flex; /*Putting the elements at the end, so the bar will look shorter until hovers it*/
     align-items: end;
@@ -488,4 +487,9 @@ body { /*Adding space for the Header*/
 /*Getting Fullscreen Image bigger when hovers it*/
 .video-panel_fig:hover .video-panel_img-fullscreen {
   height: 135%;
+}
+
+/*Visualization Panel, Controls Figures, and Volume Bar*/
+.video-panel_visualization, .video-panel_fig, .video-panel_sound-input {
+  cursor: pointer;
 }

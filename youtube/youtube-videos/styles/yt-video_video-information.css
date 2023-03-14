@@ -69,7 +69,7 @@
 /*Channel Name and Channel Badge Tooltips*/
 .info-channel_account-name__tooltip, .info-channel_account-badge__tooltip {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 00;
   background-color: var(--gray-tooltip);
   padding: .9rem 1rem;
   border-radius: .5rem;
@@ -121,7 +121,7 @@
 .info-interactions {
   padding-bottom: 1.3rem;
   position: relative;
-    z-index: 10; /*To put the tooltips on top of the Video Info container*/
+    z-index: 4; /*To put the tooltips on top of the Video Info container*/
   display: flex;
     gap: .8rem;
 }
@@ -290,7 +290,7 @@
   overflow: hidden; /*Hiding overflowing content (Tooltip)*/
   transition: .15s;
   position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
 /*When hovers Video Description*/
@@ -330,7 +330,7 @@
   position: absolute;
     right: 0;
     bottom: -6.8rem;
-    z-index: 5;
+    z-index: 3;
 }
 
 .info-description_stats:hover .info-description_tooltip {

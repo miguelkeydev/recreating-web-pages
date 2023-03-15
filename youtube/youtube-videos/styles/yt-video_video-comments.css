@@ -1,0 +1,371 @@
+/*Comments Container*/
+.main-comments {
+  color: white;
+  padding: 0 2rem 5rem;
+}
+
+/*Comments Info*/
+.comments-info {
+  padding-bottom: 2.5rem;
+  display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/*Comments Amount*/
+.comments-info_amount {
+  font-size: 1.7rem;
+}
+
+/*Comments Sort*/
+.comments-info_sort {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/*Sort Image*/
+.comments-info_sort-img {
+  width: 2.8rem;
+}
+
+/*Sort Text*/
+.comments-info_sort-text {
+  font-size: 1.5rem;
+}
+
+/*Sort Tooltip*/
+.comments-info_sort-tooltip {
+  font-size: 1.3rem;
+  background-color: var(--gray-tooltip);
+  padding: .8rem;
+  border-radius: .5rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: .2s;
+  position: absolute;
+    top: 5.5rem;
+    left: -1rem;
+}
+
+.comments-info_sort:hover .comments-info_sort-tooltip {
+  opacity: 1;
+}
+
+/*Create a Comment container*/
+.comments-create {
+  padding-bottom: 3rem;
+  display: flex;
+}
+
+/*Comment Figure*/
+.comments-create_fig {
+  height: 4rem;
+  margin-right: 1.8rem;
+}
+
+/*Comment Image*/
+.comments-create_img {
+  height: 100%;
+  border-radius: 100%;
+}
+
+/*Create a Comment*/
+.comments-create_comment {
+  flex: 1;
+  display: flex;
+    flex-direction: column;
+}
+
+/*Comment Input*/
+.comments-create_comment-input {
+  font-size: 1.4rem;
+  background-color: transparent;
+  padding-bottom: .7rem;
+  border: none;
+  border-bottom: .1rem solid var(--gray-light);
+}
+
+/*Comment Input Placeholder*/
+.comments-create_comment-input::placeholder {
+  color: var(--gray-light);
+}
+
+/*Comment Actions*/
+.comments-create_comment-actions {
+  padding-top: 1rem;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Comment Emojis Figure*/
+.comments-create_comment-actions__fig {
+  width: 3.5rem;
+  border-radius: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Comment Emojis Image*/
+.comments-create_comment-actions__img {
+  width: 3rem;
+  margin: .5rem .1rem 0 0;
+}
+
+.comments-create_comment-actions__fig:hover {
+  background-color: var(--white-20);
+}
+
+/*Comment Buttons*/
+.comments-create_comment-actions__buttons {
+  display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+/*Cancel and Comment buttons*/
+.comments-create_comment-actions__buttons-cancel, .comments-create_comment-actions__buttons-comment {
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 5rem;
+  transition: .05s;
+}
+
+/*Cancel button*/
+.comments-create_comment-actions__buttons-cancel {
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+}
+
+.comments-create_comment-actions__buttons-cancel:hover {
+  background-color: var(--white-20);
+}
+
+/*Comment button*/
+.comments-create_comment-actions__buttons-comment {
+  font-weight: 600;
+  background-color: var(--black-7);
+  color: var(--gray-tooltip);
+}
+
+/*User Comments*/
+.comments-comments {
+  display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+/*User Comment*/
+.comments-comments_comment {
+  position: relative;
+  display: flex;
+}
+
+/*User Comment Profile Picture*/
+.comments-comments_comment-fig {
+  height: 4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.comments-comments_comment-img {
+  height: 100%;
+  border-radius: 100%;
+}
+
+/*User Comment Information*/
+.comments-comments_comment-info {
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+}
+
+/*User Comment Header*/
+.comments-comments_comment-info__header {
+  padding: 0 0 .2rem .7rem;
+  display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/*User Comment Username*/
+.comments-comments_comment-info__header-username {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: .1rem;
+  cursor: pointer;
+}
+
+/*User Comment Date*/
+.comments-comments_comment-info__header-date {
+  font-size: 1.2rem;
+  color: var(--white-50);
+  cursor: pointer;
+}
+
+.comments-comments_comment-info__header-date:hover {
+  color: white;
+}
+
+/*User Comment Body*/
+.comments-comments_comment-info__body {
+  font-size: 1.4rem;
+  padding: 0 0 .7rem .7rem;
+  display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/*User Comment Text*/
+.comments-comments_comment-info__body-text {
+  width: 95%;
+  max-height: 8rem;
+  line-height: 2rem;
+  overflow: hidden;
+}
+
+/*User Comment Read more*/
+.comments-comments_comment-info__body-readmore {
+  color: var(--white-70);
+  cursor: pointer;
+}
+
+.comments-comments_comment-info__body-readmore:hover {
+  text-decoration: underline;
+}
+
+/*User Comment Footer*/
+.comments-comments_comment-info__footer {
+  display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+/*User Comment Like*/
+.comments-comments_comment-info__footer-like {
+  display: flex;
+    align-items: center;
+}
+
+/*User Comment Like and Dislike Figures*/
+.comments-comments_comment-info__footer-like___fig, .comments-comments_comment-info__footer-dislike {
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  transition: .05s;
+  position: relative;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments-comments_comment-info__footer-like___fig:hover, .comments-comments_comment-info__footer-dislike:hover {
+  background-color: var(--white-20);
+  border-radius: 100%;
+}
+
+/*User Comment Like Image*/
+.comments-comments_comment-info__footer-like___img {
+  width: 65%;
+}
+
+/*User Comment Like Amount*/
+.comments-comments_comment-info__footer-like___amount {
+  font-size: 1.3rem;
+  color: var(--white-50);
+}
+
+/*User Comment Like and Dislike Tooltips*/
+.comments-comments_comment-info__footer-like___tooltip, .comments-comments_comment-info__footer-dislike___tooltip {
+  font-size: 1.3rem;
+  background-color: var(--gray-tooltip);
+  padding: .8rem;
+  border-radius: .5rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: .2s;
+  position: absolute;
+    bottom: -5rem;
+}
+
+.comments-comments_comment-info__footer-like___fig:hover .comments-comments_comment-info__footer-like___tooltip, .comments-comments_comment-info__footer-dislike:hover .comments-comments_comment-info__footer-dislike___tooltip {
+  opacity: 1;
+}
+
+/*User Comment Dislike Image*/
+.comments-comments_comment-info__footer-dislike___img {
+  width: 55%;
+}
+
+/*User Comment Reply*/
+.comments-comments_comment-info__footer-reply {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  padding: .9rem 1.2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.comments-comments_comment-info__footer-reply:hover {
+  background-color: var(--white-20);
+}
+
+/*User Comment Replies*/
+.comments-comments_comment-info__replies {
+  font-family: 'Roboto';
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: var(--blue-link);
+  width: fit-content;
+  padding: 1rem 1.7rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: .1s;
+  display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comments-comments_comment-info__replies:hover {
+  background-color: rgba(34, 82, 136, 0.4);
+}
+
+/*User Comment Replies*/
+.comments-comments_comment-info__replies-img {
+  width: 1.3rem;
+}
+
+/*User Comment Options*/
+.comments-comments_comment-options {
+  font-size: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+    top: 0;
+    right: -1.7rem;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments-comments_comment-options:active {
+  background-color: var(--white-20);
+}
+
+.comments-comments_comment:hover .comments-comments_comment-options {
+  opacity: 1;
+}

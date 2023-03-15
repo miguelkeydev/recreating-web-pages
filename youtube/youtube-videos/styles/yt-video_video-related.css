@@ -1,7 +1,7 @@
 /*Video Related*/
 .main-related {
   color: white;
-  padding: .5rem 0 0 2rem;
+  padding: .5rem 0 2.5rem 2rem;
 }
 
 /*Video Topics*/
@@ -43,7 +43,7 @@
 .related-videos {
   display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: 1rem;
 }
 
 /*Video Related*/

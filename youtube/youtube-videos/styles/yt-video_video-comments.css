@@ -1,7 +1,6 @@
 /*Comments Container*/
 .main-comments {
-  color: white;
-  padding: 0 2rem 5rem;
+  padding: 0 2.5rem 2rem;
 }
 
 /*Comments Info*/
@@ -253,8 +252,8 @@
     align-items: center;
 }
 
-/*User Comment Like and Dislike Figures*/
-.comments-comments_comment-info__footer-like___fig, .comments-comments_comment-info__footer-dislike {
+/*User Comment Like, Dislike, and Creator Figures*/
+.comments-comments_comment-info__footer-like___fig, .comments-comments_comment-info__footer-dislike, .comments-comments_comment-info__footer-creator {
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;
@@ -281,12 +280,33 @@
   color: var(--white-50);
 }
 
-/*User Comment Like and Dislike Tooltips*/
-.comments-comments_comment-info__footer-like___tooltip, .comments-comments_comment-info__footer-dislike___tooltip {
+/*User Comment Dislike Image*/
+.comments-comments_comment-info__footer-dislike___img {
+  width: 55%;
+}
+
+/*User Comment Creator Image*/
+.comments-comments_comment-info__footer-creator___picture {
+  width: 55%;
+  border: .1rem solid var(--gray-tooltip);
+  border-radius: 100%;
+}
+
+/*User Comment Creator Heart*/
+.comments-comments_comment-info__footer-creator__heart {
+  width: 1.4rem;
+  position: absolute;
+    right: .2rem;
+    bottom: .3rem;
+}
+
+/*User Comment Like, Dislike, and Creator Tooltips*/
+.comments-comments_comment-info__footer-like___tooltip, .comments-comments_comment-info__footer-dislike___tooltip, .comments-comments_comment-info__footer-creator___tooltip {
   font-size: 1.3rem;
   background-color: var(--gray-tooltip);
   padding: .8rem;
   border-radius: .5rem;
+  white-space: nowrap;
   pointer-events: none;
   opacity: 0;
   transition: .2s;
@@ -294,13 +314,8 @@
     bottom: -5rem;
 }
 
-.comments-comments_comment-info__footer-like___fig:hover .comments-comments_comment-info__footer-like___tooltip, .comments-comments_comment-info__footer-dislike:hover .comments-comments_comment-info__footer-dislike___tooltip {
+.comments-comments_comment-info__footer-like___fig:hover .comments-comments_comment-info__footer-like___tooltip, .comments-comments_comment-info__footer-dislike:hover .comments-comments_comment-info__footer-dislike___tooltip, .comments-comments_comment-info__footer-creator:hover .comments-comments_comment-info__footer-creator___tooltip {
   opacity: 1;
-}
-
-/*User Comment Dislike Image*/
-.comments-comments_comment-info__footer-dislike___img {
-  width: 55%;
 }
 
 /*User Comment Reply*/
@@ -368,4 +383,55 @@
 
 .comments-comments_comment:hover .comments-comments_comment-options {
   opacity: 1;
+}
+
+@media (min-width: 509px) {
+  /*Tyler Comment Read more*/
+  .tyler-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 901px) {
+  /*Thandiswa Comment Read more*/
+  .thandiswa-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 1015px) {
+  /*Comments Container*/
+  .main-comments {
+    width: 66vw;
+    padding-right: 4rem;
+  }
+
+  /*Thandiswa Comment Read more*/
+  .thandiswa-readmore {
+    display: flex;
+  }
+}
+
+@media (min-width: 1125px) {
+  /*Video Comments*/
+  .main-comments {
+    width: 0;
+    flex: 1;
+    max-width: 174.3rem;
+    padding-right: 46.6rem;
+  }
+}
+
+@media (min-width: 1344px) {
+  /*Thandiswa Comment Read more*/
+  .thandiswa-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 1755px) {
+  /*Video Comments*/
+  .main-comments {
+    margin: 0 auto;
+  }
 }

@@ -1,7 +1,6 @@
 /*Video Information Container*/
 .main-info {
-  color: white;
-  padding: 1.5rem 0 2.5rem 2rem;
+  padding: 1.8rem 2.5rem;
 }
 
 /*Video Title*/
@@ -10,7 +9,7 @@
   font-size: 1.9rem;
   font-weight: 500;
   width: 100%;
-  padding-bottom: 1.2rem;
+  padding-bottom: .8rem;
 }
 
 /*Channel Info*/
@@ -106,7 +105,7 @@
   font-weight: 600;
   background-color: white;
   color: var(--black-70);
-  padding: 1rem 1.6rem;
+  padding: 1.05rem 1.6rem;
   border: none;
   border-radius: 2rem;
   cursor: pointer;
@@ -127,8 +126,8 @@
     gap: .8rem;
 }
 
-/*Video Like, Share, Download, and More containers*/
-.info-interactions_like, .info-interactions_share, .info-interactions_download, .info-interactions_more {
+/*Video Like, Share, Download, Clip, Save, and More containers*/
+.info-interactions_like, .info-interactions_share, .info-interactions_download, .info-interactions_clip, .info-interactions_save, .info-interactions_more {
   background-color: var(--black-10);
   height: 3.6rem;
   border-radius: 2rem;
@@ -138,8 +137,13 @@
     justify-content: center;
 }
 
-/*When hovers Video Like, Dislike, Share, Download, and More containers*/
-.info-interactions_like-like:hover, .info-interactions_like-dislike:hover, .info-interactions_share:hover, .info-interactions_download:hover, .info-interactions_more:hover {
+/*Clip and Save containers*/
+.info-interactions_clip, .info-interactions_save { /*Hiding it for responsive design*/
+  display: none;
+}
+
+/*When hovers Video Like, Dislike, Share, Download, Clip, Save, and More containers*/
+.info-interactions_like-like:hover, .info-interactions_like-dislike:hover, .info-interactions_share:hover, .info-interactions_download:hover, .info-interactions_clip:hover, .info-interactions_save:hover, .info-interactions_more:hover {
   background-color: var(--black-18);
 }
 
@@ -155,14 +159,22 @@
   border-end-end-radius: 2rem;
 }
 
-/*Like, Dislike, Share, Download, and More buttons*/
-.info-interactions_like-like, .info-interactions_like-dislike, .info-interactions_share-button, .info-interactions_download-button, .info-interactions_more-button {
+/*Like, Dislike, Share, Download, Clip, Save, and More buttons*/
+.info-interactions_like-like, .info-interactions_like-dislike, .info-interactions_share-button, .info-interactions_download-button, .info-interactions_clip-button, .info-interactions_save-button, .info-interactions_more-button {
   background-color: transparent;
   height: 100%;
   border: none;
   position: relative; /*To allow tooltips*/
   display: flex;
     align-items: center;
+}
+
+/*Interactions Text*/
+.info-interactions_text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: .2rem;
 }
 
 /*Video Like*/
@@ -204,12 +216,56 @@
   margin-left: .5rem;
 }
 
-/*Interactions Text*/
-.info-interactions_text {
-  font-size: 1.4rem;
-  font-weight: 600;
+/*Share*/
+.info-interactions_share {
+  padding: 0 1.5rem 0 1rem;
+}
+
+/*Share, Clip, and Save buttons*/
+.info-interactions_share-button, .info-interactions_clip-button, .info-interactions_save-button {
+  gap: .7rem;
+}
+
+/*Share Icon*/
+.info-interactions_share-img {
+  width: 2.2rem;
+}
+
+/*Download, Clip, and Save*/
+.info-interactions_download, .info-interactions_clip, .info-interactions_save {
+  padding: 0 1.6rem 0 1.2rem;
+}
+
+/*Download button*/
+.info-interactions_download-button {
+    gap: 1rem;
+}
+
+/*Download Icon*/
+.info-interactions_download-img {
+  width: 2rem;
+}
+
+/*Clip*/
+.info-interactions_clip {
+  padding: 0 1.6rem 0 1.2rem;
+}
+
+/*Clip and Save Icons*/
+.info-interactions_clip-img,.info-interactions_save-img {
+  width: 1.8rem;
+}
+
+/*More*/
+.info-interactions_more {
+  padding: 0 .8rem;
+}
+
+/*More Text*/
+.info-interactions_more-text {
+  font-size: 2.4rem;
   color: white;
-  margin-bottom: .2rem;
+  margin-bottom: 1.3rem;
 }
 
 /*Interactions Tooltip*/
@@ -229,55 +285,13 @@
     bottom: -4.8rem;
 }
 
+/*Dislike Tooltip*/
 .dislike-tooltip {
   left: -1.8rem;
 }
 
-/*Activating the Interaction Tooltips*/
-.info-interactions_like-like:hover .like-tooltip, .info-interactions_like-dislike:hover .dislike-tooltip, .info-interactions_share:hover .share-tooltip, .info-interactions_download:hover .download-tooltip {
+.info-interactions_like-like:hover .like-tooltip, .info-interactions_like-dislike:hover .dislike-tooltip, .info-interactions_share:hover .share-tooltip, .info-interactions_download:hover .download-tooltip, .info-interactions_clip:hover .clip-tooltip, .info-interactions_save:hover .save-tooltip {
   opacity: 1;
-}
-
-/*Share*/
-.info-interactions_share {
-  padding: 0 1.5rem 0 1rem;
-}
-
-/*Share button*/
-.info-interactions_share-button {
-  gap: .7rem;
-}
-
-/*Share Icon*/
-.info-interactions_share-img {
-  width: 2.2rem;
-}
-
-/*Download*/
-.info-interactions_download {
-  padding: 0 1.6rem 0 1.2rem;
-}
-
-/*Download button*/
-.info-interactions_download-button {
-    gap: 1rem;
-}
-
-/*Download Icon*/
-.info-interactions_download-img {
-  width: 2rem;
-}
-
-/*More*/
-.info-interactions_more {
-  padding: 0 .8rem;
-}
-
-/*More Text*/
-.info-interactions_more-text {
-  font-size: 2.4rem;
-  color: white;
-  margin-bottom: 1.3rem;
 }
 
 /*Video Description*/
@@ -338,10 +352,35 @@
   opacity: 1;
 }
 
-/*Video Info Show More*/
-.info-description_showmore {
+/*Video Info Subscribe*/
+.info-description_further-info_subscribe {
+  display: none;
+}
+
+/*Video Info Subscribe Image*/
+.info-description_further-info_subscribe-img {
+  width: 1.5rem;
+}
+
+/*Video Info Subscribe Line Break*/
+.info-description_subscribe-br {
+  display: none;
+}
+
+/*Video Info Show More and Subscribe Show More*/
+.info-description_showmore,.info-description_showmore-subscribe {
   font-weight: 600;
   box-shadow: -1.5rem 0rem 1rem 0rem rgb(40, 40, 40);
+}
+
+/*Subscribe Show More*/
+.info-description_showmore-subscribe {
+  display: none;
+}
+
+/*Video Info Show More and Subscribe Show more Line Break*/
+.info-description_showmore-br, .info-description_showmore-subscribe__br {
+  display: none;
 }
 
 /*Video Info Shadow*/
@@ -370,4 +409,160 @@
 /*Video Info Link and Suggesded Video*/
 .info-description_link, .info-suggested_video {
   color: var(--blue-link) ;
+}
+
+@media (min-width: 563px) {
+  /*Clip container*/
+  .info-interactions_clip {
+    display: flex;
+  }
+}
+
+@media (min-width: 601px) {
+  /*Show More br*/
+  .info-description_showmore-br {
+    display: flex;
+  }
+
+  /*Show More Shadow*/
+  .info-description_shadow {
+    display: none;
+  }
+}
+
+@media (min-width: 657px) {
+  /*Save Container*/
+  .info-interactions_save {
+    display: flex;
+  }
+
+  /*Video Description*/
+  .info-description {
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 661px) {
+  /*Channel Info and Interactions*/
+  .info-chanel_interactions {
+    display: flex;
+      align-items: center;
+      gap: 4rem;
+  }
+
+  /*Download, Clip, and Save containers*/
+  .info-interactions_download, .info-interactions_clip, .info-interactions_save {
+    display: none;
+  }
+}
+
+@media (min-width: 680px) {
+  /*Video Description*/
+  .info-description {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 898px) {
+  /*Download Container*/
+  .info-interactions_download {
+    display: flex;
+  }
+}
+
+@media (min-width: 1015px) {
+  /*Video Information and Related*/
+  .main-info_related {
+    max-width: 174rem;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  /*Video Info*/
+  .main-info {
+    width: 66vw;
+  }
+
+  /*Channel Further info*/
+  .info-channel_account {
+    width: 13rem;
+  }
+
+  /*Download Container*/
+  .info-interactions_download {
+    display: none;
+  }
+}
+
+@media (min-width: 1125px) {
+  /*Video Info*/
+  .main-info {
+    width: 0;
+    flex: 1;
+  }
+}
+
+@media (min-width: 1324px) {
+  /*Download Container*/
+  .info-interactions_download {
+    display: flex;
+  }
+}
+
+@media (min-width: 1500px) {
+  /*Clip Container*/
+  .info-interactions_clip {
+    display: flex;
+  }
+}
+
+@media (min-width: 1515px) {
+  /*Video Info Subscribe Line Break*/
+  .info-description_subscribe-br {
+    display: flex;
+  }
+
+  /*Video Info Subscribe*/
+  .info-description_further-info_subscribe {
+    display: flex;
+  }
+
+  /*Video Info Subscribe*/
+  .info-description_showmore-br {
+    display: none;
+  }
+  
+  /*Video Info Subscribe Show more Line Break*/
+  .info-description_showmore-subscribe__br {
+    display: flex;
+  }
+
+  /*Video Info Subscribe Show More*/
+  .info-description_showmore-subscribe {
+    display: flex;
+  }
+
+  /*Video Info Show More*/
+  .info-description_showmore {
+    display: none;
+  }
+
+  /*Show More Shadow*/
+  .info-description_shadow {
+    display: flex;
+  }
+}
+
+@media (min-width: 1688px) {
+  /*Save Container*/
+  .info-interactions_save {
+    display: flex;
+  }
+}
+
+@media (min-width: 1755px) {
+  /**/
+  .main-info_related {
+
+  }
 }

@@ -2,15 +2,28 @@ body { /*Adding space for the Header*/
   padding-top: 5.6rem;
 }
 
+/*Scroll Bar*/
+body::-webkit-scrollbar { /*Making the scroll bar background transparent*/
+  background-color: var(--white-70);
+  width: 1.2rem;
+}
+
+/*Scroll Bar - Bar*/
+body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
+  border-radius: revert;
+}
+
 /*Main container*/
 .main {
+  position: relative;
   display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /*To show the children in a new line if there isn't enough space to show them horizontally*/
 }
 
 /*Video and Video container*/
 .main-video, .video-img {
   width: 100%;
+  max-height: 76.7rem;
 }
 
 /*Video container*/
@@ -20,6 +33,7 @@ body { /*Adding space for the Header*/
   position: relative; /*To allow elements on top of it*/
   display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /*More Info container*/
@@ -42,7 +56,7 @@ body { /*Adding space for the Header*/
 .video-moreinfo_tooltip {
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: var(--white-10);
+  background-color: var(--gray-dark-tooltip);
   color: white;
   padding: .5rem .8rem;
   border-radius: .4rem;
@@ -67,7 +81,7 @@ body { /*Adding space for the Header*/
   cursor: pointer;
   transition: .2s;
   position: absolute;
-    right: 1.5rem;
+    right: 1.2rem;
     bottom: 1.2rem;
   display: flex;
     justify-content: end;
@@ -75,7 +89,7 @@ body { /*Adding space for the Header*/
 
 /*Channel Icon container when hovers the Video container*/
 .main-video:hover .video-channel_icon {
-  bottom: 5rem;
+  bottom: 4.5rem;
 }
 
 /*Channel Icon image*/
@@ -149,7 +163,7 @@ body { /*Adding space for the Header*/
 /*Video Visualization*/
 .video-panel_visualization {
   background-color: transparent;
-  width: 97%;
+  width: 98.5%;
   height: .6rem; /*Using .6rem of 4.rem*/
   transition: .2s;
   display: flex; /*Putting the elements at the end, so the bar will look shorter until hovers it*/
@@ -185,7 +199,7 @@ body { /*Adding space for the Header*/
 
 /*Charged Visualization*/
 .video-panel_visualization-charged {
-  background-color: var(--gray-light);
+  background-color: var(--white-50);
   width: 22%;
 }
 /*Non Visualization*/
@@ -204,7 +218,7 @@ body { /*Adding space for the Header*/
   width: 1.3rem;
   height: 1.3rem;
     top: -.4rem;
-    right: 0;
+    right: -.7rem;
 }
 
 /*Controls*/
@@ -220,7 +234,7 @@ body { /*Adding space for the Header*/
   width: 20rem;
   white-space: nowrap; /*Avoiding line breaks on Video Length*/
   position: relative;
-    z-index: 5; /*Putting it behind Right Controls, so the overflow content will disappear*/
+    z-index: 2; /*Putting it behind Right Controls, so the overflow content will disappear*/
   display: flex; /*Allowing the buttons go horizontally*/
 }
 
@@ -238,7 +252,7 @@ body { /*Adding space for the Header*/
 .video-panel_tooltip {
   font-size: 1.3rem;
   font-weight: 600;
-  background-color: var(--white-10);
+  background-color: var(--gray-dark-tooltip);
   color: white;
   padding: .4rem .8rem;
   border-radius: .4rem;
@@ -404,7 +418,7 @@ body { /*Adding space for the Header*/
   flex: 1;
   padding-left: .2rem;
   position: relative;
-  z-index: 10;
+  z-index: 3;
   display: flex;
     align-items: center;
     justify-content: space-between;
@@ -491,4 +505,89 @@ body { /*Adding space for the Header*/
 /*Visualization Panel, Controls Figures, and Volume Bar*/
 .video-panel_visualization, .video-panel_fig, .video-panel_sound-input {
   cursor: pointer;
+}
+
+@media (min-width: 494px) {
+  /*Channel Icon container when hovers the Video container*/
+  .main-video:hover .video-channel_icon {
+    bottom: 5.9rem;
+  }
+
+  /*Video Panel*/
+  .video-panel {
+    height: 5.2rem;
+  }
+
+  /*Video Visualization*/
+  .video-panel_visualization {
+    height: .7rem;
+  }
+
+  /*Controls*/
+  .video-panel_controls {
+    height: 4.5rem; /*Using 4.5rem of 5.2rem*/
+  }
+
+  /*Controls Left*/
+  .video-panel_controls-left {
+    flex: 1;
+      gap: 1.5rem;
+  }
+
+  /*Controls Right*/
+  .video-panel_controls-right {
+    background-color: transparent;
+    flex: 1;
+      justify-content: end;
+      gap: 1.5rem;
+  }
+  
+  /*Controls Tooltip*/
+  .video-panel_tooltip {
+      top: -4rem;
+  }
+  
+  /*Play, Next Video, Sound Images*/
+  .video-panel_img-play, .video-panel_img-next, .video-panel_img-sound {
+    height: 52%;
+  }
+  
+  /*Next Video Tooltip*/
+  .next-video_tooltip {
+    top: -11rem;
+  }
+  
+  /*Volume container*/
+  .video-panel_sound-range {
+      bottom: 1.7rem;
+  }
+  
+  /*Volume Toltip*/
+  .volume-tooltip {
+    top: -6rem;
+    right: -.2rem;
+  }
+
+    /*Video Length*/
+  .video-panel_length {
+    background-color: transparent;
+      top: 1.4rem;
+  }
+  
+  /*Settings HD*/
+  .video-panel_img-settings__hd {
+    right: 0;
+  }
+}
+
+@media (min-width: 855px) {
+  /*Video Container*/
+  .main-video {
+    height: fit-content;
+  }
+
+  /*Video and Video Container*/
+  .video-img {
+    max-width: 136.4rem;
+  }
 }

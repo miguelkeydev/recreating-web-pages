@@ -47,11 +47,16 @@ body::-webkit-scrollbar { /*Making the scroll bar background transparent*/
 
 /*Scroll Bar - Bar*/
 body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
-  background-color: var(--white-7);
+  background-color: var(--white-70);
   border-radius: 1rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main-video, .main-info_related, .main-info, .main-related, .main-comments {
+  width: 100%;
+  color: white;
 }

@@ -1,0 +1,206 @@
+/*Video Information*/
+/*Video Description Show More Line Breaks*/
+.saint-br {
+  display: none;
+}
+
+.saint-showmore_br {
+  display: none;
+}
+
+.saint-showmore_subscribe {
+  font-weight: 600;
+  box-shadow: -1.5rem 0rem 1rem 0rem rgb(40, 40, 40);
+  display: none;
+}
+
+.halo-br, .halo-soundtracks_br, .halo-soundtracks {
+  display: none;
+}
+
+.info-description_further-info_text-soundtracks {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: var(--white-10);
+  padding: 0 .5rem;
+  margin-left: .3rem;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+    align-items: center;
+}
+
+.info-description_further-info_text-soundtracks__img {
+  width: 1.6rem;
+}
+
+@media (min-width: 493px) {
+  /**/
+  .halo-br {
+    display: flex;
+  }
+}
+
+@media (min-width: 661px) {
+  /*Channel Info and Interactions*/
+  .info-chanel_interactions {
+    display: flex;
+      align-items: center;
+      gap: 4rem;
+  }
+
+  /*Download, Clip, and Save containers*/
+  .info-interactions_download, .info-interactions_clip, .info-interactions_save {
+    display: none;
+  }
+}
+
+@media (min-width: 862px) {
+  /*Description Line Breaks*/
+  .halo-br {
+    display: none;
+  }
+
+  .halo-soundtracks_br {
+    display: flex;
+  }
+
+  .info-description_showmore {
+    display: none;
+  }
+
+  .halo-soundtracks_showmore {
+    display: flex;
+  }
+
+  /*Description Halo Soundtracks text*/
+  .halo-soundtracks {
+    display: flex;
+  }
+}
+
+@media (min-width: 898px) {
+  /*Download Container*/
+  .info-interactions_download {
+    display: flex;
+  }
+}
+
+@media (min-width: 1015px) {
+  /*Description Halo Soundtracks text*/
+  .halo-soundtracks {
+    display: none;
+  }
+
+  /*Download Container*/
+  .info-interactions_download {
+    display: none;
+  }
+
+  .halo-soundtracks_br {
+    display: none;
+  }
+
+  .info-description_showmore {
+    display: flex;
+  }
+
+  .halo-soundtracks_showmore {
+    display: none;
+  }
+}
+
+@media (min-width: 1284px) {
+  /*Description Halo Soundtracks text*/
+  .halo-soundtracks {
+    display: flex;
+  }
+
+  .halo-soundtracks_br {
+    display: flex;
+  }
+
+  .info-description_showmore {
+    display: none;
+  }
+
+  .halo-soundtracks_showmore {
+    display: flex;
+  }
+}
+
+@media (min-width: 1324px) {
+  /*Download Container*/
+  .info-interactions_download {
+    display: flex;
+  }
+}
+
+@media (min-width: 1500px) {
+  /*Clip Container*/
+  .info-interactions_clip {
+    display: flex;
+  }
+}
+
+@media (min-width: 1515px) {
+  /*Video Info Subscribe Line Break*/
+  .saint-br {
+    display: flex;
+  }
+
+  /*Video Info Subscribe*/
+  .info-description_further-info_subscribe {
+    display: flex;
+  }
+
+  /*Video Info Subscribe Showmore*/
+  .saint-showmore_subscribe {
+    display: flex;
+  }
+
+  /*Video Info Show More*/
+  .info-description_showmore {
+    display: none;
+  }
+
+  /*Show More Shadow*/
+  .info-description_shadow {
+    display: flex;
+  }
+  
+  /*Description Line Breaks*/
+  .halo-br {
+    display: flex;
+  }
+}
+
+@media (min-width: 1688px) {
+  /*Save Container*/
+  .info-interactions_save {
+    display: flex;
+  }
+}
+
+/*Video Related*/
+
+@media (min-width: 780px) {
+  /*Topics Next Saint Video*/
+  .saint-topics_next {
+    display: none;
+  }
+}
+
+@media (min-width: 862px) {
+  /*Topics Next Halo Video*/
+  .halo-topics_next {
+    display: none;
+  }
+}
+
+@media (min-width: 1015px) {
+  /*Topics Next*/
+  .related-topics_next {
+    display: flex;
+  }
+}

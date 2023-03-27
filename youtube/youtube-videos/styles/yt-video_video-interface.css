@@ -85,6 +85,7 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
     bottom: 1.2rem;
   display: flex;
     justify-content: end;
+    align-items: end;
 }
 
 /*Channel Icon container when hovers the Video container*/
@@ -94,8 +95,14 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
 
 /*Channel Icon image*/
 .video-channel_img {
-  width: 80%;
-  opacity: .5;
+  width: 90%;
+  height: fit-content;
+  opacity: .7;
+}
+
+/*Channel Icon image Rounded*/
+.video-channel_img--rounded {
+  border-radius: 100%;
 }
 
 /*Channel Icon Tooltip*/
@@ -122,13 +129,25 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
   font-weight: 500;
 }
 
-/*Channel Subscribe Icon Tooltip*/
+/*Channel Subscribe Button Tooltip*/
 .tooltip-subscribe {
   font-size: 1.3rem;
   font-weight: 600;
   background-color: rgb(220, 0, 0);
   color: inherit;
   padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+/*Channel Subscribed Button Tooltip*/
+.tooltip-subscribed {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: white;
+  color: var(--gray-tooltip);
+  padding: 1.1rem 1.7rem;
   border: none;
   border-radius: 3rem;
   cursor: pointer;
@@ -181,7 +200,6 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
 /*Seen Visualization*/
 .video-panel_visualization-seen {
   background-color: var(--red-youtube);
-  width: 9%;
   position: relative;
 }
 
@@ -200,7 +218,6 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
 /*Charged Visualization*/
 .video-panel_visualization-charged {
   background-color: var(--white-50);
-  width: 22%;
 }
 /*Non Visualization*/
 .video-panel_visualization-unseen {
@@ -391,7 +408,7 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
 }
 
 /*Video Length*/
-.video-panel_length {
+.video-panel_length, .video-panel_live {
   font-size: 1.2rem;
   background-color: black; /*To cover the Volume bar*/
   color: white;
@@ -400,16 +417,42 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
   transition: .3s;
   position: absolute;
     top: .9rem;
-    right: -7.5rem;
+    left: 4rem;
     z-index: 12;
   display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*Video Live*/
+.video-panel_live {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray-light);
+  padding: 0;
+  pointer-events: all;
+  cursor: pointer;
+    top: .7rem;
+    left: 5rem;
+}
+
+/*Video Live Tooltip*/
+.live-tooltip {
+    top: -6.7rem;
+}
+
+.video-panel_live:hover .video-panel_tooltip {
+  opacity: 1;
+}
+
 /*Moving the Video Length when hovers the Sound image*/
 .video-panel_sound:hover .video-panel_length {
-    right: -13rem;
+    left: 8.5rem;
+}
+
+/*Moving the Video Live when hovers the Sound image*/
+.video-panel_sound:hover .video-panel_live {
+    left: 9.5rem;
 }
 
 /*Right Controls*/
@@ -536,7 +579,6 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
 
   /*Controls Right*/
   .video-panel_controls-right {
-    background-color: transparent;
     flex: 1;
       justify-content: end;
       gap: 1.5rem;
@@ -568,15 +610,28 @@ body::-webkit-scrollbar-thumb { /*Adding styles to the scroll bar*/
     right: -.2rem;
   }
 
-    /*Video Length*/
+  /*Video Length*/
   .video-panel_length {
     background-color: transparent;
       top: 1.4rem;
+  }
+
+  /*Video Live*/
+  .video-panel_live {
+    background-color: transparent;
+      top: 1.2rem;
   }
   
   /*Settings HD*/
   .video-panel_img-settings__hd {
     right: 0;
+  }
+}
+
+@media (min-width: 590px) {
+  /*Controls Right*/
+  .video-panel_controls-right {
+    background-color: transparent;
   }
 }
 

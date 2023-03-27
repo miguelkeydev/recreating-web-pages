@@ -1,6 +1,6 @@
 /*Video Related*/
 .main-related {
-  padding: 0 2rem 2.5rem;
+  padding: 0 2.5rem 2.5rem;
 }
 
 /*Video Topics*/
@@ -228,25 +228,8 @@
   background-color: var(--gray-light);
 }
 
-.unseen-thebest {
-  width: 43%;
-}
-
-.unseen-100v100 {
-  width: 62%;
-}
-
-.unseen-halo {
-  width: 71%;
-}
-
-.unseen-chopin {
-  width: 74%;
-}
-
 /*Video Mix Division*/
 .related-videos_video-mix {
-  background-color: var(--gray-tooltip);
   height: 2.5rem;
   position: absolute;
     right: 0;
@@ -346,6 +329,11 @@
   position: absolute;
     top: -6rem;
     left: -.8rem;
+}
+
+/*Channel Name Mix Tooltip*/
+.mix-tooltip {
+  white-space: normal;
 }
 
 .related-videos_video-info__owner-channel___name:hover .channel-tooltip {
@@ -452,25 +440,13 @@
   border: none;
 }
 
-@media (min-width: 780px) {
-  /*Topics Next*/
-  .related-topics_next {
-    display: none;
-  }
-}
-
 @media (min-width: 1015px) {
   /*Video Related*/
   .main-related {
     width: 32vw;
     max-width: 42.6rem;
-    height: 28rem;
+    height: 10rem;
     padding: 2.8rem 2rem 0 0;
-  }
-
-  /*Topics Next*/
-  .related-topics_next {
-    display: flex;
   }
 
   /*Related Video Channel Name*/

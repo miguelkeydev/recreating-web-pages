@@ -185,12 +185,36 @@
     flex-direction: column;
 }
 
+/*Creator Pinned Comment*/
+.comments-comments_comment-info__pinned {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white-50);
+  padding-bottom: 1rem;
+  display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+/*Pinned Comment Image*/
+.comments-comments_comment-info__pinned-img {
+  width: 1.5rem;
+  margin-top: .1rem;
+}
+
 /*User Comment Header*/
 .comments-comments_comment-info__header {
   padding: 0 0 .2rem .7rem;
   display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+/*Creator Pinned Comment Username*/
+.pinned-username {
+  background-color: var(--white-50);
+  padding: .2rem .6rem;
+  border-radius: 1rem;
 }
 
 /*User Comment Username*/
@@ -356,9 +380,15 @@
   background-color: rgba(34, 82, 136, 0.4);
 }
 
-/*User Comment Replies*/
+/*User Comment Replies Icon*/
 .comments-comments_comment-info__replies-img {
   width: 1.3rem;
+}
+
+/*Creator Image Comment Replies*/
+.comments-comments_comment-info__replies-creator {
+  width: 2.5rem;
+  border-radius: 100%;
 }
 
 /*User Comment Options*/
@@ -388,6 +418,27 @@
 @media (min-width: 509px) {
   /*Tyler Comment Read more*/
   .tyler-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 555px) {
+  /*Eve Comment Read more*/
+  .eve-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 581px) {
+  /*Daniel Comment Read more*/
+  .daniel-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 607px) {
+  /*Pedro Comment Read more*/
+  .pedro-readmore {
     display: none;
   }
 }
@@ -422,9 +473,37 @@
   }
 }
 
+@media (min-width: 1262px) {
+  /*HunterKa Comment Read more*/
+  .hunterka-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 1270px) {
+  /*Randy Comment Read more*/
+  .randy-readmore{
+    display: none;
+  }
+}
+
 @media (min-width: 1344px) {
   /*Thandiswa Comment Read more*/
   .thandiswa-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 1445px) {
+  /*Hunter Bolt Comment Read more*/
+  .hunterbolt-readmore {
+    display: none;
+  }
+}
+
+@media (min-width: 1723px) {
+  /*Commander Comment Read more*/
+  .commander-readmore {
     display: none;
   }
 }

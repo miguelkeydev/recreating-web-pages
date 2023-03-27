@@ -1,6 +1,7 @@
 /*Video Information Container*/
 .main-info {
-  padding: 1.8rem 2.5rem;
+  padding: 1.5rem .5rem 1.5rem 2.5rem;
+  max-width: 46rem;
 }
 
 /*Video Title*/
@@ -10,6 +11,7 @@
   font-weight: 500;
   width: 100%;
   padding-bottom: .8rem;
+  line-height: 2.8rem;
 }
 
 /*Channel Info*/
@@ -33,7 +35,8 @@
 
 /*Channel Further info*/
 .info-channel_account {
-  width: 14rem;
+  padding-right: 3rem;
+  white-space: nowrap;
   display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,10 +85,16 @@
     left: .3rem;
 }
 
-/*Channel Badge Tooltip*/
-.info-channel_account-badge__tooltip {
+/*Channel Badge Artist Tooltip*/
+.info-channel_account-badge__artist {
   top: -6.5rem;
   left: -5.5rem;
+}
+
+/*Channel Badge Verified Tooltip*/
+.info-channel_account-badge__verified {
+  top: -6.5rem;
+  left: -2.2rem;
 }
 
 /*Channel Name Tooltip when hovers Channel Name*/
@@ -99,9 +108,8 @@
   color: var(--white-50);
 }
 
-/*Subscribe button*/
-.info-channel_subscribe {
-  font-size: 1.3rem;
+/*Subscribe and Join buttons*/
+.info-channel_subscribe, .info-channel_join {
   font-weight: 600;
   background-color: white;
   color: var(--black-70);
@@ -112,9 +120,43 @@
   transition: .15s;
 }
 
-/*Subscribe button when hovers*/
-.info-channel_subscribe:hover {
+/*Subscribe and Join buttons when hovers*/
+.info-channel_subscribe:hover, .info-channel_join:hover {
   background-color: var(--white-80);
+}
+
+/*Subscribed Button*/
+.info-channel_subscribed {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: var(--black-10);
+  color: white;
+  padding: .35rem 1.3rem .55rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  margin-left: .8rem;
+  cursor: pointer;
+  transition: .15s;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+/*Subscribed Notification Icon*/
+.info-channel_subscribed-bell {
+  width: 2.5rem;
+  margin-top: .2rem;
+}
+
+/*Subscribed Notification Arrow*/
+.info-channel_subscribed-arrow {
+  width: 1.3rem;
+  margin-left: .5rem;
+}
+
+.info-channel_subscribed:hover {
+  background-color: var(--black-18);
 }
 
 /*Interactions*/
@@ -193,6 +235,11 @@
 .info-interactions_like-img__like {
   width: 2.2rem;
   margin-top: .3rem;
+}
+
+/*Liked Icon*/
+.info-interactions_like-img__liked {
+  margin-top: 0;
 }
 
 /*Dislike button*/
@@ -335,21 +382,25 @@
   font-size: 1.3rem;
   font-weight: 500;
   background-color: var(--gray-tooltip);
-  width: 80%;
   padding: .8rem 1rem;
   border-radius: .4rem;
-  white-space: normal;
+  white-space: nowrap;
   pointer-events: none;
   transition: .2s;
   opacity: 0;
   position: absolute;
     right: 0;
-    bottom: -6.8rem;
+    bottom: -5.8rem;
     z-index: 3;
 }
 
 .info-description_stats:hover .info-description_tooltip {
   opacity: 1;
+}
+
+/*Video Info Text*/
+.info-description_further-info {
+  padding-right: .5rem;
 }
 
 /*Video Info Subscribe*/
@@ -362,25 +413,10 @@
   width: 1.5rem;
 }
 
-/*Video Info Subscribe Line Break*/
-.info-description_subscribe-br {
-  display: none;
-}
-
-/*Video Info Show More and Subscribe Show More*/
-.info-description_showmore,.info-description_showmore-subscribe {
+/*Video Info Show More Show More*/
+.info-description_showmore {
   font-weight: 600;
   box-shadow: -1.5rem 0rem 1rem 0rem rgb(40, 40, 40);
-}
-
-/*Subscribe Show More*/
-.info-description_showmore-subscribe {
-  display: none;
-}
-
-/*Video Info Show More and Subscribe Show more Line Break*/
-.info-description_showmore-br, .info-description_showmore-subscribe__br {
-  display: none;
 }
 
 /*Video Info Shadow*/
@@ -409,6 +445,14 @@
 /*Video Info Link and Suggesded Video*/
 .info-description_link, .info-suggested_video {
   color: var(--blue-link) ;
+}
+
+@media (min-width: 493px) {
+  /*Video Information Container*/
+  .main-info {
+    padding: 1.5rem 2.5rem;
+    max-width: none
+  }
 }
 
 @media (min-width: 563px) {
@@ -442,31 +486,10 @@
   }
 }
 
-@media (min-width: 661px) {
-  /*Channel Info and Interactions*/
-  .info-chanel_interactions {
-    display: flex;
-      align-items: center;
-      gap: 4rem;
-  }
-
-  /*Download, Clip, and Save containers*/
-  .info-interactions_download, .info-interactions_clip, .info-interactions_save {
-    display: none;
-  }
-}
-
 @media (min-width: 680px) {
   /*Video Description*/
   .info-description {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width: 898px) {
-  /*Download Container*/
-  .info-interactions_download {
-    display: flex;
   }
 }
 
@@ -487,11 +510,6 @@
   .info-channel_account {
     width: 13rem;
   }
-
-  /*Download Container*/
-  .info-interactions_download {
-    display: none;
-  }
 }
 
 @media (min-width: 1125px) {
@@ -499,70 +517,5 @@
   .main-info {
     width: 0;
     flex: 1;
-  }
-}
-
-@media (min-width: 1324px) {
-  /*Download Container*/
-  .info-interactions_download {
-    display: flex;
-  }
-}
-
-@media (min-width: 1500px) {
-  /*Clip Container*/
-  .info-interactions_clip {
-    display: flex;
-  }
-}
-
-@media (min-width: 1515px) {
-  /*Video Info Subscribe Line Break*/
-  .info-description_subscribe-br {
-    display: flex;
-  }
-
-  /*Video Info Subscribe*/
-  .info-description_further-info_subscribe {
-    display: flex;
-  }
-
-  /*Video Info Subscribe*/
-  .info-description_showmore-br {
-    display: none;
-  }
-  
-  /*Video Info Subscribe Show more Line Break*/
-  .info-description_showmore-subscribe__br {
-    display: flex;
-  }
-
-  /*Video Info Subscribe Show More*/
-  .info-description_showmore-subscribe {
-    display: flex;
-  }
-
-  /*Video Info Show More*/
-  .info-description_showmore {
-    display: none;
-  }
-
-  /*Show More Shadow*/
-  .info-description_shadow {
-    display: flex;
-  }
-}
-
-@media (min-width: 1688px) {
-  /*Save Container*/
-  .info-interactions_save {
-    display: flex;
-  }
-}
-
-@media (min-width: 1755px) {
-  /**/
-  .main-info_related {
-
   }
 }

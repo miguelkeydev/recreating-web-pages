@@ -1,0 +1,205 @@
+/*Video Information*/
+/*Info Container*/
+.main-info {
+  /* padding-top: 2.4rem; */
+  padding-top: 8.5rem;
+}
+
+/*Clip Live Container*/
+.info-interactions_clip {
+  display: flex;
+}
+
+@media (min-width: 530px) {
+  /*Save container*/
+  .info-interactions_save {
+    display: flex;
+  }
+}
+
+@media (min-width: 711px) {
+  /*Channel Info and Interactions*/
+  .info-chanel_interactions {
+    display: flex;
+      align-items: center;
+      gap: 4rem;
+  }
+
+  /*Channel Further Info*/
+  .info-channel_account {
+    width: 0;
+    flex: 1;
+  }
+
+  /*Channel Join Button*/
+  .info-channel_join {
+    z-index: 3;
+  }
+
+  /*Download, Clip, and Save containers*/
+  .info-interactions_download, .info-interactions_clip, .info-interactions_save {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  /*Channel Further Info*/
+  .info-channel_account {
+    width: fit-content;
+    flex: none;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 820px) {
+  /*Clip Live Container*/
+  .info-interactions_clip {
+    display: flex;
+  }
+}
+
+@media (min-width: 1010px) {
+  /*Save Container*/
+  .info-interactions_save {
+    display: flex;
+  }
+}
+
+@media (min-width: 1015px) {
+  /*Info Container*/
+  .main-info {
+    padding-top: 1.8rem;
+    width: 69rem;
+  }
+
+  /*Info Channel Interactions*/
+  .info-chanel_interactions {
+    display: block;
+  }
+}
+
+@media (min-width: 1137px) {
+  /*Info Container*/
+  .main-info {
+    width: 66%;
+  }
+
+  /*Info Channel Interactions*/
+  .info-chanel_interactions {
+    display: flex;
+  }
+
+  /*Info Channel Further Info*/
+  .info-channel_account {
+    width: 0;
+    flex: 1;
+  }
+
+  /*Clip Live Container*/
+  .info-interactions_clip {
+    display: none;
+  }
+
+  /*Save Container*/
+  .info-interactions_save {
+    display: none;
+  }
+}
+
+@media (min-width: 1165px) {
+  /*Channel Further Info*/
+  .info-channel_account {
+    width: fit-content;
+    flex: none;
+  }
+}
+
+@media (min-width: 1246px) {
+  /*Clip Container*/
+  .info-interactions_clip {
+    display: flex;
+  }
+}
+
+@media (min-width: 1436px) {
+  /*Save Container*/
+  .info-interactions_save {
+    display: flex;
+  }
+}
+
+/*Video Related*/
+/*Related Container*/
+.main-related {
+  padding-bottom: 0;
+  position: relative;
+}
+
+/*Video Live Chat*/
+.info-chat {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  padding: .9rem 0;
+  width: 90%;
+  border: .1rem solid var(--white-15);
+  border-radius: 2.5rem;
+  margin-bottom: 2.8rem;
+  position: absolute;
+    top: -33.5rem;
+}
+
+.info-chat:hover {
+  background-color: var(--white-15);
+  padding: 1rem 0;
+  border: none;
+}
+
+@media (min-width: 488px) {
+  /*Video Live Chat*/
+  .info-chat {
+      top: -32rem;
+  }
+}
+
+@media (min-width: 711px) {
+  /*Video Live Chat*/
+  .info-chat {
+    width: 95%;
+      top: -27rem;
+  }
+}
+
+@media (min-width: 820px) {
+  /*Channel Info and Interactions*/
+  .info-chanel_interactions {
+      gap: 1rem;
+  }
+}
+
+@media (min-width: 850px) {
+  /*Topics Next Lofi Live*/
+  .lofi-topics_next {
+    display: none;
+  }
+}
+
+@media (min-width: 1015px) {
+  /*Related Container*/
+  .main-related {
+    padding-top: 9rem;
+    width: 0;
+    flex: 1;
+  }
+  
+  /*Video Live Chat*/
+  .info-chat {
+      top: 3rem;
+  }
+
+  /*Topics Next*/
+  .related-topics_next {
+    display: flex;
+  }
+}
